@@ -20,28 +20,7 @@
 <div class="col-md-10 col-lg-8">
 <div class="market-place d-flex align-items-center">
 <div class="banner-content aos" data-aos="fade-up">
-<p>With the world's #1 Developers marketplace</p>
-<h1>Get the perfect <span class="orange-text">Developers & Projects</span> every time</h1>
-<form class="form" name="store" id="store" method="post" action="https://kofejob.dreamguystech.com/template/project.html">
-<div class="form-inner">
-<div class="input-group">
-<div class="category-project">
-<label>Category</label>
-<span class="drop-detail">
-<select class="form-control select" name="storeID">
-<option value="project.html">Projects</option>
-<option value="developer.html">Freelancers</option>
-</select>
-</span>
-</div>
-<div class="what-search">
-<label>What</label>
-<input type="email" class="form-control" placeholder="Job title, keywords, or company">
-</div>
-<button class="btn btn-primary sub-btn" type="submit">Search Now</button>
-</div>
-</div>
-</form>
+
 </div>
 </div>
 </div>
@@ -165,25 +144,21 @@
 
 
 
-<!-- <section class="section projects projects-two projects-four">
+ <section class="section projects projects-two projects-four">
 <div class="container">
 <div class="row">
 <div class="col-12 col-md-12 mx-auto">
 <ul class="dot-head aos" data-aos="fade-up">
-<li><i class="fas fa-circle"></i></li>
-<li><i class="fas fa-circle"></i></li>
-<li><i class="fas fa-circle"></i></li>
-<li><i class="fas fa-circle"></i></li>
-<li><i class="fas fa-circle"></i></li>
+
 </ul>
 <div class="section-header section-header-two text-left aos" data-aos="fade-up">
 <h2 class="header-title">Get Inspired<br> By Development Projects</h2>
 <div class="browse-all d-flex align-items-center">
-<a href="project.html" class="btn btn-primary">Browse All Projects <i class="fas fa-angle-right"></i></a>
+<!-- <a href="project.html" class="btn btn-primary">Browse All Projects <i class="fas fa-angle-right"></i></a> -->
 </div>
 </div>
 <div class="section-text aos" data-aos="fade-up">
-<p>High Performing Solutions To Your</p>
+
 </div>
 </div>
 </div>
@@ -192,22 +167,17 @@
 <div class="col-lg-4 col-md-6 col-sm-6">
 <div class="project-item aos" data-aos="fade-up">
 <div class="project-img">
-<a href="project.html"><img src="<?php echo base_url()?>assets/frontends/img/project/project-15.jpg" alt="" class="img-fluid"></a>
+<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-15.jpg" alt="" class="img-fluid"></a>
 </div>
 <div class="d-flex justify-content-between align-items-center">
 <div class="develope-group">
 <div class="inspired-group d-flex">
-<h5><a href="project.html">ANGULAR</a></h5>
+<h5><a href="#">Pidana</a></h5>
 <div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>24</h4>
+<h4><i class="fas fa-folder"></i>10</h4>
 </div>
 </div>
-<div class="inspired-group d-flex">
-<h5><a href="project.html">DEVELOPER</a></h5>
-<div class="count-number count-sky">
-<h4><i class="fas fa-user-friends"></i>30</h4>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -217,22 +187,17 @@
 <div class="col-lg-4 col-md-6 col-sm-6">
 <div class="project-item aos" data-aos="fade-up">
 <div class="project-img">
-<a href="project.html"><img src="<?php echo base_url()?>assets/frontends/img/project/project-16.jpg" alt="" class="img-fluid"></a>
+<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-16.jpg" alt="" class="img-fluid"></a>
 </div>
 <div class="d-flex justify-content-between align-items-center">
 <div class="develope-group">
 <div class="inspired-group d-flex">
-<h5><a href="project.html">JAVA</a></h5>
+<h5><a href="#">Perdata</a></h5>
 <div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>24</h4>
+<h4><i class="fas fa-folder"></i>7</h4>
 </div>
 </div>
-<div class="inspired-group d-flex">
-<h5><a href="project.html">DEVELOPER</a></h5>
-<div class="count-number count-sky">
-<h4><i class="fas fa-user-friends"></i>30</h4>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -242,22 +207,17 @@
 <div class="col-lg-4 col-md-6 col-sm-6">
 <div class="project-item aos" data-aos="fade-up">
 <div class="project-img">
-<a href="project.html"><img src="<?php echo base_url()?>assets/frontends/img/project/project-17.jpg" alt="" class="img-fluid"></a>
+<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-17.jpg" alt="" class="img-fluid"></a>
 </div>
 <div class="d-flex justify-content-between align-items-center">
 <div class="develope-group">
 <div class="inspired-group d-flex">
-<h5><a href="project.html">PHP</a></h5>
+<h5><a href="#">Tindak Pidana Khusus</a></h5>
 <div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>24</h4>
+<h4><i class="fas fa-folder"></i>5</h4>
 </div>
 </div>
-<div class="inspired-group d-flex">
-<h5><a href="project.html">DEVELOPER</a></h5>
-<div class="count-number count-sky">
-<h4><i class="fas fa-user-friends"></i>30</h4>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -267,22 +227,17 @@
 <div class="col-lg-4 col-md-6 col-sm-6">
 <div class="project-item aos" data-aos="fade-up">
 <div class="project-img">
-<a href="project.html"><img src="<?php echo base_url()?>assets/frontends/img/project/project-17.jpg" alt="" class="img-fluid"></a>
+<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-17.jpg" alt="" class="img-fluid"></a>
 </div>
 <div class="d-flex justify-content-between align-items-center">
 <div class="develope-group">
 <div class="inspired-group d-flex">
-<h5><a href="project.html">REACT</a></h5>
+<h5><a href="#">Agama</a></h5>
 <div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>24</h4>
+<h4><i class="fas fa-folder"></i>5</h4>
 </div>
 </div>
-<div class="inspired-group d-flex">
-<h5><a href="project.html">DEVELOPER</a></h5>
-<div class="count-number count-sky">
-<h4><i class="fas fa-user-friends"></i>30</h4>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -292,22 +247,17 @@
 <div class="col-lg-4 col-md-6 col-sm-6">
 <div class="project-item aos" data-aos="fade-up">
 <div class="project-img">
-<a href="project.html"><img src="<?php echo base_url()?>assets/frontends/img/project/project-18.jpg" alt="" class="img-fluid"></a>
+<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-18.jpg" alt="" class="img-fluid"></a>
 </div>
 <div class="d-flex justify-content-between align-items-center">
 <div class="develope-group">
 <div class="inspired-group d-flex">
-<h5><a href="project.html">LARAVEL</a></h5>
+<h5><a href="#">Notaris</a></h5>
 <div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>24</h4>
+<h4><i class="fas fa-folder"></i>2</h4>
 </div>
 </div>
-<div class="inspired-group d-flex">
-<h5><a href="project.html">DEVELOPER</a></h5>
-<div class="count-number count-sky">
-<h4><i class="fas fa-user-friends"></i>30</h4>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -317,22 +267,17 @@
 <div class="col-lg-4 col-md-6 col-sm-6">
 <div class="project-item aos" data-aos="fade-up">
 <div class="project-img">
-<a href="project.html"><img src="<?php echo base_url()?>assets/frontends/img/project/project-16.jpg" alt="" class="img-fluid"></a>
+<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-16.jpg" alt="" class="img-fluid"></a>
 </div>
 <div class="d-flex justify-content-between align-items-center">
 <div class="develope-group">
 <div class="inspired-group d-flex">
-<h5><a href="project.html">ANDROID APPS</a></h5>
+<h5><a href="#">Perizinan</a></h5>
 <div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>24</h4>
+<h4><i class="fas fa-folder"></i>2</h4>
 </div>
 </div>
-<div class="inspired-group d-flex">
-<h5><a href="project.html">DEVELOPER</a></h5>
-<div class="count-number count-sky">
-<h4><i class="fas fa-user-friends"></i>30</h4>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -340,7 +285,7 @@
 
 </div>
 </div>
-</section> -->
+</section>
 
 
 <!-- <section class="section subscribe subscribe-four">

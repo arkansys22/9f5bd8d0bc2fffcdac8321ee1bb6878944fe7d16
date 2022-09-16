@@ -7,6 +7,6 @@ class Home extends CI_Controller {
 	{
 
 
-	$this->load->view('frontendsv2/index');
+	$this->load->view('frontends/index');
 	}
 }

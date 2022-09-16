@@ -10,7 +10,7 @@
 </span>
 </a>
 <a href="index.html" class="navbar-brand logo">
-<img src="<?php echo base_url()?>assets/frontends/img/logo-four.png" class="img-fluid" alt="Logo">
+<img style="width:200px" src="<?php echo base_url()?>assets/frontends/legia.png" class="img-fluid" alt="Logo">
 </a>
 </div>
 <div class="main-menu-wrapper">
