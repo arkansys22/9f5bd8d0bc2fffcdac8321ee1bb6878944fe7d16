@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from kofejob.dreamguystech.com/template/admin/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Sep 2022 06:56:17 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<title>Kofejob - Bootstrap Admin HTML Template</title>
+
+<link rel="shortcut icon" href="assets/img/favicon.png">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+<link rel="stylesheet" href="assets/css/feather.css">
+
+<link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+
+<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+<div class="header">
+
+<div class="header-left">
+<a href="index.html" class="logo">
+<img src="assets/img/logo.png" alt="Logo">
+</a>
+<a href="index.html" class="logo logo-small">
+<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
+</a>
+
+<a href="javascript:void(0);" id="toggle_btn">
+<i class="feather-chevrons-left"></i>
+</a>
+
+
+<a class="mobile_btn" id="mobile_btn">
+<i class="feather-chevrons-left"></i>
+</a>
+
+</div>
+
+
+<div class="top-nav-search">
+<form>
+<input type="text" class="form-control" placeholder="Start typing your Search...">
+<button class="btn" type="submit"><i class="feather-search"></i></button>
+</form>
+</div>
+
+
+<ul class="nav user-menu">
+
+<li class="nav-item dropdown">
+<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+<i class="feather-bell"></i> <span class="badge badge-pill">5</span>
+</a>
+<div class="dropdown-menu notifications">
+<div class="topnav-dropdown-header">
+<span class="notification-title">Notifications</span>
+<a href="javascript:void(0)" class="clear-noti"> Clear All</a>
+</div>
+<div class="noti-content">
+<ul class="notification-list">
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt="" src="assets/img/profiles/avatar-02.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">Brian Johnson</span> paid the invoice <span class="noti-title">#DF65485</span></p>
+<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt="" src="assets/img/profiles/avatar-03.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">Marie Canales</span> has accepted your estimate <span class="noti-title">#GTR458789</span></p>
+<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<div class="avatar avatar-sm flex-shrink-0">
+<span class="avatar-title rounded-circle bg-primary-light"><i class="far fa-user"></i></span>
+</div>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">New user registered</span></p>
+<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<span class="avatar avatar-sm flex-shrink-0">
+<img class="avatar-img rounded-circle" alt="" src="assets/img/profiles/avatar-04.jpg">
+</span>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">Barbara Moore</span> declined the invoice <span class="noti-title">#RDW026896</span></p>
+<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+</div>
+</div>
+</a>
+</li>
+<li class="notification-message">
+<a href="#">
+<div class="media d-flex">
+<div class="avatar avatar-sm flex-shrink-0">
+<span class="avatar-title rounded-circle bg-info-light"><i class="far fa-comment"></i></span>
+</div>
+<div class="media-body flex-grow-1">
+<p class="noti-details"><span class="noti-title">You have received a new message</span></p>
+<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<div class="topnav-dropdown-footer">
+<a href="#">View all Notifications</a>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item dropdown has-arrow main-drop">
+<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+<span class="user-img">
+<img src="assets/img/profiles/avatar-07.jpg" alt="">
+<span class="status online"></span>
+</span>
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="profile.html"><i data-feather="user" class="me-1"></i> Profile</a>
+<a class="dropdown-item" href="settings.html"><i data-feather="settings" class="me-1"></i> Settings</a>
+<a class="dropdown-item" href="login.html"><i data-feather="log-out" class="me-1"></i> Logout</a>
+</div>
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="sidebar" id="sidebar">
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+<li class="menu-title"><span>Main</span></li>
+<li>
+<a href="index.html"><i data-feather="home"></i> <span>Dashboard</span></a>
+</li>
+<li>
+<a href="categories.html"><i data-feather="copy"></i> <span>Categories</span></a>
+</li>
+<li>
+<a href="projects.html"><i data-feather="database"></i> <span>Projects</span></a>
+</li>
+<li>
+<a href="users.html"><i data-feather="users"></i> <span>Freelancer</span></a>
+</li>
+<li>
+<a href="deposit.html"><i data-feather="user-check"></i> <span>Deposit</span></a>
+</li>
+<li>
+<a href="withdrawn.html"><i data-feather="user-check"></i> <span>Withdrawn</span></a>
+</li>
+<li>
+<a href="transaction.html"><i data-feather="clipboard"></i> <span>Transaction</span></a>
+</li>
+<li>
+<a href="providers.html"><i data-feather="user-check"></i> <span>Providers</span></a>
+</li>
+<li>
+<a href="subscription.html"><i data-feather="user-check"></i> <span>Subscription</span></a>
+</li>
+<li>
+<a href="reports.html"><i data-feather="pie-chart"></i> <span>Reports</span></a>
+</li>
+<li>
+<a href="roles.html"><i data-feather="clipboard"></i> <span>Roles</span></a>
+</li>
+<li>
+<a href="skills.html"><i data-feather="award"></i> <span>Skills</span></a>
+</li>
+<li>
+<a href="verify-identity.html"><i data-feather="user-check"></i> <span>Verify Identity</span></a>
+</li>
+<li>
+<a href="settings.html"><i data-feather="settings"></i> <span>Settings</span></a>
+</li>
+<li class="menu-title"><span>UI Interface</span></li>
+<li>
+<a href="components.html"><i data-feather="pocket"></i> <span>Components</span></a>
+</li>
+<li class="submenu">
+<a href="#"><i data-feather="file-minus"></i> <span> Forms</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="form-basic-inputs.html">Basic Inputs</a></li>
+<li><a href="form-input-groups.html">Input Groups</a></li>
+<li><a href="form-horizontal.html">Horizontal Form</a></li>
+<li><a href="form-vertical.html">Vertical Form</a></li>
+<li><a href="form-mask.html">Form Mask</a></li>
+<li><a href="form-validation.html">Form Validation</a></li>
+</ul>
+</li>
+<li class="submenu active">
+<a href="#"><i data-feather="align-justify"></i> <span> Tables</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="tables-basic.html" class="active">Basic Tables</a></li>
+<li><a href="data-tables.html">Data Table</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="page-wrapper">
+<div class="content container-fluid">
+
+<div class="page-header">
+<div class="row">
+<div class="col-sm-12">
+<h3 class="page-title">Basic Tables</h3>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Basic Table</h4>
+</div>
+<div class="table-responsive">
+<table class="table mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="543e3b3c3a14312c35392438317a373b39">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Moe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ef3ffece7defbe6fff3eef2fbb0fdf1f3">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>July</td>
+<td>Dooley</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c2a8b7aebb82a7baa3afb2aea7eca1adaf">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Striped Rows</h4>
+</div>
+<div class="table-responsive">
+<table class="table table-striped mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0aaafa8ae80a5b8a1adb0aca5eea3afad">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Moe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e38e82919aa3869b828e938f86cd808c8e">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>July</td>
+<td>Dooley</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="670d120b1e27021f060a170b024904080a">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Bordered Table</h4>
+</div>
+<div class="table-responsive">
+<table class="table table-bordered mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4b212423250b2e332a263b272e65282426">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Moe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ae7ebf8f3caeff2ebe7fae6efa4e9e5e7">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>July</td>
+<td>Dooley</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e68c938a9fa6839e878b968a83c885898b">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Hover Rows</h4>
+</div>
+<div class="table-responsive">
+<table class="table table-hover mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John</td>
+<td>Doe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e2888d8a8ca2879a838f928e87cc818d8f">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>Mary</td>
+<td>Moe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="95f8f4e7ecd5f0edf4f8e5f9f0bbf6faf8">[email&#160;protected]</a></td>
+</tr>
+<tr>
+<td>July</td>
+<td>Dooley</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="503a253c29103528313d203c357e333f3d">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Contextual Classes</h4>
+</div>
+<div class="table-responsive">
+<table class="table mb-0">
+<thead>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td>Defaultson</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7a3a2a187b4a8aaa2aaa6aeabe9a4a8aa">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-primary">
+<td>Primary</td>
+<td>Doe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2842474046684d50494558444d064b4745">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-secondary">
+<td>Secondary</td>
+<td>Moe</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="81ece0f3f8c1e4f9e0ecf1ede4afe2eeec">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-success">
+<td>Success</td>
+<td>Dooley</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="117b647d68517469707c617d743f727e7c">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-danger">
+<td>Danger</td>
+<td>Refs</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8dad7f8ddc0d9d5c8d4dd96dbd7d5">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-warning">
+<td>Warning</td>
+<td>Activeson</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1d7c7e695d78657c706d7178337e7270">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-info">
+<td>Info</td>
+<td>Activeson</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="91f0f2e5d1f4e9f0fce1fdf4bff2fefc">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-light">
+<td>Light</td>
+<td>Activeson</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6d0c0e192d08150c001d0108430e0200">[email&#160;protected]</a></td>
+</tr>
+<tr class="table-dark">
+<td>Dark</td>
+<td>Activeson</td>
+<td><a href="https://kofejob.dreamguystech.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7213110632170a131f021e175c111d1f">[email&#160;protected]</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="card">
+<div class="card-body">
+<div class="card-header pt-0">
+<h4 class="card-title">Responsive Tables</h4>
+</div>
+<div class="table-responsive">
+<table class="table table-nowrap mb-0">
+<thead>
+<tr>
+<th>#</th>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Age</th>
+<th>City</th>
+<th>Country</th>
+ </tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Anna</td>
+<td>Pitt</td>
+<td>35</td>
+<td>New York</td>
+<td>USA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/feather.min.js"></script>
+
+<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+
+<!-- Mirrored from kofejob.dreamguystech.com/template/admin/tables-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Sep 2022 06:56:17 GMT -->
+</html>
