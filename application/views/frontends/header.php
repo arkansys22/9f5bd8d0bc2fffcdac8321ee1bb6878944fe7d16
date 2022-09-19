@@ -9,14 +9,14 @@
 <span></span>
 </span>
 </a>
-<a href="index.html" class="navbar-brand logo">
+<a href="<?php echo base_url()?>" class="navbar-brand logo">
 <img style="width:200px" src="<?php echo base_url()?>assets/frontends/legia.png" class="img-fluid" alt="Logo">
 </a>
 </div>
 <div class="main-menu-wrapper">
 <div class="menu-header">
-<a href="index.html" class="menu-logo">
-<img src="<?php echo base_url()?>assets/frontends/img/logo-four.png" class="img-fluid" alt="Logo">
+<a href="<?php echo base_url()?>" class="menu-logo">
+<img src="<?php echo base_url()?>assets/frontends/legia.png" class="img-fluid" alt="Logo">
 </a>
 <a id="menu_close" class="menu-close" href="javascript:void(0);">
 <i class="fas fa-times"></i>
@@ -46,7 +46,7 @@
 <li><a href="login.html" class="log-btn"> Daftar</a></li>
 </ul>
 <ul class="nav header-navbar-rht text-center">
-<li><a href="post-project.html" class="btn login-btn">Bahasa </a></li>
+<li><a href="#" class="btn login-btn">Bahasa <i class="fas fa-chevron-down"></i></a></li>
 </ul>
 </div>
 </nav>
