@@ -19144,6 +19144,12 @@ body.chat-page {
 	}
 }
 
+@media (min-width:992px) {
+	.btn-bahasa-mobile {
+	  display: none !important;
+	}
+}
+
 .feature-four .feature-item:hover {
 	background: rgb(41, 38, 100);
 }

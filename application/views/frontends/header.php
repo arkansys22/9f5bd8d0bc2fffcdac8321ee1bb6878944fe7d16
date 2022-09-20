@@ -38,9 +38,12 @@
   <li>
   <a href="#" target="_blank">Artikel</a>
   </li>
+  <li>
+  <a href="#" target="_blank" class="btn-bahasa-mobile">Bahasa</a>
+  </li>
 </ul>
 </div>
-<ul class="nav">
+<ul class="nav header-navbar-rht">
   <div class="chat-cont-left-header">
     <div class="chat-header">
       <form class="chat-search">
