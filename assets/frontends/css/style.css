@@ -19091,6 +19091,34 @@ body.chat-page {
 .header-four .main-nav .has-submenu.active .submenu li.active > a, .header-four .main-nav > li .submenu li a:hover {
   background-color: #292663;
 }
+.chat-cont-left-header .chat-search .input-group .input-group-prepend {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  color: #666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 15px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}
+.icon-circle {
+  background: #f00;
+}
+.btn-bahasa{
+  align-items: center;
+  display: flex !important;
+}
+.btn-login-custom{
+  margin-right: 30px;
+}
+.header-four .header-navbar-rht .login-btn, .header-four .header-navbar-rht .login-btn:hover {
+  min-width: 120px;
+}
 @media only screen and (max-width:479px) {
 	.home-four {
 	  margin-top: 0;
