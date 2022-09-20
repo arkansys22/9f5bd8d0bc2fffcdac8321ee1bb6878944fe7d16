@@ -164,124 +164,35 @@
 </div>
 <div class="row">
 
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="project-item aos" data-aos="fade-up">
-<div class="project-img">
-<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-15.jpg" alt="" class="img-fluid"></a>
-</div>
-<div class="d-flex justify-content-between align-items-center">
-<div class="develope-group">
-<div class="inspired-group d-flex">
-<h5><a href="#">Pidana</a></h5>
-<div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>10</h4>
-</div>
-</div>
 
-</div>
-</div>
-</div>
-</div>
+    <?php foreach ($posts as $post) {  ?>
+      <?php $services = $this->Panel_m->view_where('services',array('services_status'=>'publish','products_cat_id'=>$post->products_cat_id))->num_rows(); ?>
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="project-item aos" data-aos="fade-up">
+        <div class="project-img">
+        <a href="#">
+          <?php if(empty($post->products_cat_gambar)) { ?>
+            <img src="<?php echo base_url()?>bahan/foto_products/noimage.jpg" alt="" class="img-fluid">
+          <?php }else{ ?>
+            <img src="<?php echo base_url()?>bahan/foto_products/<?php echo $post->products_cat_gambar ?>" alt="" class="img-fluid">
+          <?php } ?>
+        </a>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+        <div class="develope-group">
+        <div class="inspired-group d-flex">
+        <h5><a href="#"><?php echo $post->products_cat_judul ?></a></h5>
+        <div class="count-number count-pink">
 
+        <h4><i class="fas fa-folder"></i><?=$services ?></h4>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    <?php } ?>
 
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="project-item aos" data-aos="fade-up">
-<div class="project-img">
-<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-16.jpg" alt="" class="img-fluid"></a>
-</div>
-<div class="d-flex justify-content-between align-items-center">
-<div class="develope-group">
-<div class="inspired-group d-flex">
-<h5><a href="#">Perdata</a></h5>
-<div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>7</h4>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="project-item aos" data-aos="fade-up">
-<div class="project-img">
-<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-17.jpg" alt="" class="img-fluid"></a>
-</div>
-<div class="d-flex justify-content-between align-items-center">
-<div class="develope-group">
-<div class="inspired-group d-flex">
-<h5><a href="#">Tindak Pidana Khusus</a></h5>
-<div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>5</h4>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="project-item aos" data-aos="fade-up">
-<div class="project-img">
-<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-17.jpg" alt="" class="img-fluid"></a>
-</div>
-<div class="d-flex justify-content-between align-items-center">
-<div class="develope-group">
-<div class="inspired-group d-flex">
-<h5><a href="#">Agama</a></h5>
-<div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>5</h4>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="project-item aos" data-aos="fade-up">
-<div class="project-img">
-<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-18.jpg" alt="" class="img-fluid"></a>
-</div>
-<div class="d-flex justify-content-between align-items-center">
-<div class="develope-group">
-<div class="inspired-group d-flex">
-<h5><a href="#">Notaris</a></h5>
-<div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>2</h4>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
-
-<div class="col-lg-4 col-md-6 col-sm-6">
-<div class="project-item aos" data-aos="fade-up">
-<div class="project-img">
-<a href="#"><img src="<?php echo base_url()?>assets/frontends/img/project/project-16.jpg" alt="" class="img-fluid"></a>
-</div>
-<div class="d-flex justify-content-between align-items-center">
-<div class="develope-group">
-<div class="inspired-group d-flex">
-<h5><a href="#">Perizinan</a></h5>
-<div class="count-number count-pink">
-<h4><i class="fas fa-folder"></i>2</h4>
-</div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
 
 </div>
 </div>
