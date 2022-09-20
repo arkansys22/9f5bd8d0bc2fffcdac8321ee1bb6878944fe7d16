@@ -181,7 +181,7 @@
         <div class="d-flex justify-content-between align-items-center">
         <div class="develope-group">
         <div class="inspired-group d-flex">
-        <h5><a href="#"><?php echo $post->products_cat_judul ?></a></h5>
+        <h3><a href="#"><?php echo $post->products_cat_judul ?></a></h3>
         <div class="count-number count-pink">
 
         <h4><i class="fas fa-folder"></i><?=$services ?></h4>
