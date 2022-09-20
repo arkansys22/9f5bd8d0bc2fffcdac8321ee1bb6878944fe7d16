@@ -11,7 +11,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 
-		$data['posts'] = $this->Crud_m->view_where_orderings('products_category',array('products_cat_status'=>'publish'),'products_cat_id','DESC');
+		$data['posts'] = $this->Crud_m->view_where_orderings('products_category',array('products_cat_status'=>'publish'),'products_cat_id','ASC');
 		$this->load->view('frontends/index',$data);
 	}
 }
