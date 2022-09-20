@@ -40,22 +40,8 @@
             <a href="<?php echo base_url('paneladmin/data_karyawan') ?>" class="small-box-footer">Info Lengkap <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
-          <?php } ?>      
-            <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <?php $jmlproducts1 = $this->Panel_m->view_where('pengumuman',array('pengumuman_stat'=>'publish'))->num_rows(); ?>
-              <div class="inner">
-                <h3><?php echo $jmlproducts1; ?></h3>
-                <p>Pengumuman</p>
-              </div>
-              <div class="icon">
-                <i class="fas fa-bullhorn"></i>
-              </div>
-            <a href="<?php echo base_url('paneladmin/pengumuman') ?>" class="small-box-footer">Info Lengkap <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-
-          </div>
+          <?php } ?>
+      
         </div>
         <!-- /.row -->
         <!-- Main row -->
