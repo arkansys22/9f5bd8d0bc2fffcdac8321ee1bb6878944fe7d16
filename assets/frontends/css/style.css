@@ -19088,7 +19088,9 @@ body.chat-page {
 /*-----------------
 	39. Bayu's Customize
 -----------------------*/
-
+.header-four .main-nav .has-submenu.active .submenu li.active > a, .header-four .main-nav > li .submenu li a:hover {
+  background-color: #292663;
+}
 @media only screen and (max-width:479px) {
 	.home-four {
 	  margin-top: 0;

@@ -45,8 +45,14 @@
 <li><img src="<?php echo base_url()?>assets/frontends/img/key-01.png" alt="Logo"></li>
 <li><a href="login.html" class="log-btn"> Daftar</a></li>
 </ul>
-<ul class="nav header-navbar-rht text-center">
-<li><a href="#" class="btn login-btn">Bahasa <i class="fas fa-chevron-down"></i></a></li>
+<ul class="nav header-navbar-rht text-center main-nav">
+  <li class="has-submenu">
+    <a href="#" class="btn login-btn">Bahasa <i class="fas fa-chevron-down"></i></a>
+    <ul class="submenu">
+      <li><a href="#"><img class="img-fluid" src="<?php echo base_url()?>assets/frontends/img/flags/indonesia-flag.svg" alt="Post Image">Bahasa</a></li>
+      <li><a href="#"><img class="img-fluid" src="<?php echo base_url()?>assets/frontends/img/flags/united-kingdom-flag-uk.svg" alt="Post Image">English</a></li>
+    </ul>
+  </li>
 </ul>
 </div>
 </nav>
