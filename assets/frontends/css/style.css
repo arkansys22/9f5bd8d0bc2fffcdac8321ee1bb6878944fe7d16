@@ -19088,44 +19088,47 @@ body.chat-page {
 /*-----------------
 	39. Bayu's Customize
 -----------------------*/
-.header-four .main-nav .has-submenu.active .submenu li.active > a, .header-four .main-nav > li .submenu li a:hover {
-  background-color: #292663;
-}
 .chat-cont-left-header .chat-search .input-group .input-group-prepend {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  bottom: 0;
-  color: #666;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  right: 15px;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  z-index: 4;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	bottom: 0;
+	color: #666;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	right: 15px;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	z-index: 4;
 }
 .icon-circle {
-  background: #f00;
+	background: #f00;
 }
 .btn-bahasa{
-  align-items: center;
-  display: flex !important;
+	align-items: center;
+	display: flex !important;
 }
 .btn-login-custom{
-  margin-right: 30px;
+	margin-right: 30px;
 }
 .header-four .header-navbar-rht .login-btn, .header-four .header-navbar-rht .login-btn:hover {
-  min-width: 120px;
+	min-width: 120px;
+}
+.header-four .main-nav ul {
+	background-color: rgb(95, 91, 176);
+}
+.main-nav li > ul.custom-width-bahasa {
+	min-width: 120px;
 }
 @media only screen and (max-width:479px) {
 	.home-four {
-	  margin-top: 0;
-	  background-image: url(../img/legia2.png);
-	  background-repeat: no-repeat;
-	  background-position: center;
-	  background-size: 100%;
+		margin-top: 0;
+		background-image: url(../img/legia2.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
 	}
 	.market-place {
 		min-height: 430px;
@@ -19134,24 +19137,31 @@ body.chat-page {
 
 @media only screen and (max-width:991px) {
 	.home-four {
-	  background-image: url(../img/legia2.png);
-	  background-repeat: no-repeat;
-	  background-position: center;
-	  background-size: 100%;
+		background-image: url(../img/legia2.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
 	}
 	.header-four .bar-icon span, .header-four .main-menu-wrapper {
 		background-color: #292664;
+	}
+	.header-four .main-nav .has-submenu.active .submenu li.active > a, .header-four .main-nav > li .submenu li a:hover {
+		background-color: #00c4cf;
+	}
+	.menu-close i {
+		color: #f00;
 	}
 }
 
 @media (min-width:992px) {
 	.btn-bahasa-mobile {
-	  display: none !important;
+		display: none !important;
 	}
 }
 
 .feature-four .feature-item:hover {
-	background: rgb(41, 38, 100);
+	/*background: rgb(41, 38, 100);*/
+	background: #02164c;
 }
 .feature-four .feature-content h3 {
 	color: #292664;
