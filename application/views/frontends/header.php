@@ -38,9 +38,14 @@
   <li>
   <a href="#" target="_blank">Artikel</a>
   </li>
-  <li>
-  <a href="#" target="_blank" class="btn-bahasa-mobile">Bahasa</a>
+  <li class="active has-submenu">
+    <a href="index.html" class="btn-bahasa-mobile">Bahasa <i class="fas fa-chevron-down"></i></a>
+    <ul class="submenu">
+      <li class="active"><a href="#">ID</a></li>
+      <li><a href="#">EN</a></li>
+    </ul>
   </li>
+
 </ul>
 </div>
 <ul class="nav header-navbar-rht">
@@ -62,9 +67,9 @@
 
   <li class="has-submenu btn-bahasa">
     <a href="#" class="btn login-btn">Bahasa <i class="fas fa-chevron-down"></i></a>
-    <ul class="submenu">
-      <li><a href="#"><img class="img-fluid" src="<?php echo base_url()?>assets/frontends/img/flags/indonesia-flag.svg" alt="Post Image">Bahasa</a></li>
-      <li><a href="#"><img class="img-fluid" src="<?php echo base_url()?>assets/frontends/img/flags/united-kingdom-flag-uk.svg" alt="Post Image">English</a></li>
+    <ul class="submenu custom-width-bahasa">
+      <li><a href="#"><img class="img-fluid" src="<?php echo base_url()?>assets/frontends/img/flags/indonesia-flag.svg" alt="Post Image">ID</a></li>
+      <li><a href="#"><img class="img-fluid" src="<?php echo base_url()?>assets/frontends/img/flags/united-kingdom-flag-uk.svg" alt="Post Image">EN</a></li>
     </ul>
   </li>
 </ul>
