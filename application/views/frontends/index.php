@@ -152,7 +152,7 @@
 
 </ul>
 <div class="section-header section-header-two text-left aos" data-aos="fade-up">
-<h2 class="header-title">Get Inspired<br> By Development Projects</h2>
+<h2 class="header-title">Layanan Unggulan</h2>
 <div class="browse-all d-flex align-items-center">
 <!-- <a href="project.html" class="btn btn-primary">Browse All Projects <i class="fas fa-angle-right"></i></a> -->
 </div>
@@ -655,14 +655,12 @@
 <li><i class="fas fa-circle"></i></li>
 </ul>
 <div class="section-header section-header-two text-left aos" data-aos="fade-up">
-<h2 class="header-title">Feature Blog</h2>
+<h2 class="header-title">Cari Tahu Hukum</h2>
 <div class="browse-all all-browse d-flex align-items-center">
-<a href="blog-details.html" class="btn btn-primary">Browse All <i class="fas fa-angle-right"></i></a>
+<a href="blog-details.html" class="btn btn-primary">Lebih Banyak<i class="fas fa-angle-right"></i></a>
 </div>
 </div>
-<div class="section-text aos" data-aos="fade-up">
-<p>High Performing Developers To Your</p>
-</div>
+
 </div>
 </div>
 <div>
@@ -675,14 +673,14 @@
 </div>
 <div class="blog-content">
 <div class="designation d-flex">
-<a href="#" class="sky"><i class="fas fa-circle"></i> Web design</a>
+<a href="#" class="sky"><i class="fas fa-circle"></i> RUU</a>
 </div>
 <h3 class="blog-title"><a href="blog-details.html">Your next job starts right here</a></h3>
 <ul class="entry-meta meta-item">
 <li> Aug 23, 2021</li>
 </ul>
 <div class="blog-read">
-<a href="blog-details.html" class="btn btn-primary">Read More <i class="fas fa-angle-right"></i></a>
+<a href="blog-details.html" class="btn btn-primary">Cari Tahu <i class="fas fa-angle-right"></i></a>
 </div>
 </div>
 </div>
@@ -696,14 +694,14 @@
 </div>
 <div class="blog-content">
 <div class="designation d-flex">
-<a href="#" class="pink"><i class="fas fa-circle"></i>Ui Design</a>
+<a href="#" class="pink"><i class="fas fa-circle"></i>Informasi Hukum</a>
 </div>
 <h3 class="blog-title"><a href="blog-details.html">Your next job starts right here</a></h3>
 <ul class="entry-meta meta-item">
 <li> Aug 23, 2021</li>
 </ul>
 <div class="blog-read">
-<a href="blog-details.html" class="btn btn-primary">Read More <i class="fas fa-angle-right"></i></a>
+<a href="blog-details.html" class="btn btn-primary">Cari Tahu <i class="fas fa-angle-right"></i></a>
 </div>
 </div>
 </div>
@@ -717,14 +715,14 @@
 </div>
 <div class="blog-content">
 <div class="designation d-flex">
-<a href="#" class="orange"><i class="fas fa-circle"></i> Node js</a>
+<a href="#" class="orange"><i class="fas fa-circle"></i> Review Kasus</a>
 </div>
 <h3 class="blog-title"><a href="blog-details.html">Your next job starts right here</a></h3>
 <ul class="entry-meta meta-item">
 <li> Aug 23, 2021</li>
 </ul>
 <div class="blog-read">
-<a href="blog-details.html" class="btn btn-primary">Read More <i class="fas fa-angle-right"></i></a>
+<a href="blog-details.html" class="btn btn-primary">Cari Tahu <i class="fas fa-angle-right"></i></a>
 </div>
 </div>
 </div>
@@ -738,14 +736,14 @@
 </div>
 <div class="blog-content">
 <div class="designation d-flex">
-<a href="#" class="sky"><i class="fas fa-circle"></i> Web design</a>
+<a href="#" class="sky"><i class="fas fa-circle"></i> Publikasi UU Baru</a>
 </div>
 <h3 class="blog-title"><a href="blog-details.html">Your next job starts right here</a></h3>
 <ul class="entry-meta meta-item">
 <li> Aug 23, 2021</li>
 </ul>
 <div class="blog-read">
-<a href="blog-details.html" class="btn btn-primary">Read More <i class="fas fa-angle-right"></i></a>
+<a href="blog-details.html" class="btn btn-primary">Cari Tahu <i class="fas fa-angle-right"></i></a>
 </div>
 </div>
 </div>
