@@ -74,6 +74,11 @@ class Crud_m extends CI_model{
       $this->db->or_where('products_cat_judul_seo', $products_cat_id);
       return $this->db->get($this->table_products_category)->row();
   }
+  function get_by_ids($tables,$where)
+  {
+      $this->db->where($where);
+      return $this->db->get($tables)->row();
+  }
 
   function get_by_id_blogs($id)
   {

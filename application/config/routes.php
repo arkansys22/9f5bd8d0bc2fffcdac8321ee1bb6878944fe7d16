@@ -3,8 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['login'] = "paneladmin/login";
 $route['works'] = "product/index";
-$route['portfolio/(:any)'] = "product/product_category/$1";
-$route['portfolio-detail/(:any)'] = "product/detail/$1";
+$route['layanan/(:any)'] = "layanan/product_category/$1";
+$route['layanan-detail/(:any)'] = "layanan/detail/$1";
 $route['about'] = "about/index";
 $route['gallery'] = "gallery/index";
 

@@ -170,7 +170,7 @@
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="project-item aos" data-aos="fade-up">
         <div class="project-img">
-        <a href="<?php echo base_url()?>layanan">
+        <a href="<?php echo base_url()?>layanan/<?php echo $post->products_cat_judul_seo ?>">
           <?php if(empty($post->products_cat_gambar)) { ?>
             <img src="<?php echo base_url()?>bahan/foto_products/noimage.jpg" alt="" class="img-fluid">
           <?php }else{ ?>
@@ -181,7 +181,7 @@
         <div class="d-flex justify-content-between align-items-center">
         <div class="develope-group">
         <div class="inspired-group d-flex">
-        <span style="font-size:18px; text-transform:uppercase"><a href="<?php echo base_url()?>layanan"><?php echo $post->products_cat_judul ?></a></span>
+        <span style="font-size:18px; text-transform:uppercase"><a href="<?php echo base_url()?>layanan/<?php echo $post->products_cat_judul_seo ?>"><?php echo $post->products_cat_judul ?></a></span>
         <div class="count-number count-pink">
 
         <h4><i class="fas fa-folder"></i><?=$services ?></h4>

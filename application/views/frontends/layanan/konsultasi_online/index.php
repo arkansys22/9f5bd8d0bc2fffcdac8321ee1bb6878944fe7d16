@@ -23,7 +23,7 @@
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="#"><img src="<?php echo base_url()?>assets/frontends/img/home-icon.svg" alt="Post Author"> Beranda</a></li>
 <li class="breadcrumb-item" aria-current="page">Konsultasi Online</li>
-<li class="breadcrumb-item" aria-current="page"></li>
+<li class="breadcrumb-item" aria-current="page">Layanan <?php echo $posts->products_cat_judul ?></li>
 </ol>
 </nav>
 </div>
@@ -42,11 +42,8 @@
 <div class="col-lg-12">
 <div class="card">
 <div class="card-header d-flex">
-<h5 class="card-title">Bookmarked Projects</h5>
-<ul class="list-grid d-flex align-items-center">
-<li><a href="freelancer-favourites.html"><i class="fas fa-list"></i></a></li>
-<li><a href="freelancer-favourites.html" class="favour-active"><i class="fas fa-th-large"></i></a></li>
-</ul>
+<h5 class="card-title">Layanan <?php echo $posts->products_cat_judul ?></h5>
+
 </div>
 <div class="freelance-box book-mark bookmark-projects">
 <div class="row">
@@ -67,102 +64,32 @@
 </div>
 </div>
 
-<div class="col-md-6 col-lg-12 col-xl-3">
-<div class="freelance-widget widget-author">
-<div class="freelance-content">
-<a data-bs-toggle="modal" href="#rating" class="favourite favourited"><i class="fas fa-star"></i></a>
-<div class="author-heading">
-<div class="profile-img">
-<a href="project-details.html">
-<img src="<?php echo base_url()?>assets/frontends/img/company/img-1.png" alt="author">
-<span class="project-verified"><i class="fas fa-check-circle"></i></span>
-</a>
-</div>
-<div class="profile-name">
-<div class="author-location"><a href="project-details.html">Amaze Tech </a></div>
-</div>
+<?php $services = $this->Crud_m->view_where_orderings('services',array('services_status'=>'publish','products_cat_id'=>$posts->products_cat_id),'services_id','ASC'); ?>
+  <?php foreach ($services as $post) {  ?>
+    <div class="col-xs-2 col-sm-3 col-xl-3">
+      <div class="freelance-widget widget-author">
+        <div class="freelance-content">
 
-
-<div class="freelancers-price"></div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-<div class="col-md-6 col-lg-12 col-xl-3">
-<div class="freelance-widget widget-author">
-<div class="freelance-content">
-<a data-bs-toggle="modal" href="#rating" class="favourite favourited"><i class="fas fa-star"></i></a>
-<div class="author-heading">
-<div class="profile-img">
-<a href="project-details.html">
-<img src="<?php echo base_url()?>assets/frontends/img/company/img-2.png" alt="author">
-<span class="project-verified"><i class="fas fa-check-circle"></i></span>
-</a>
-</div>
-<div class="profile-name">
-<div class="author-location"><a href="project-details.html">Park INC </a></div>
-</div>
-
-
-<div class="freelancers-price"></div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-
-<div class="col-md-6 col-lg-12 col-xl-3">
-<div class="freelance-widget widget-author">
-<div class="freelance-content">
-<a data-bs-toggle="modal" href="#rating" class="favourite favourited"><i class="fas fa-star"></i></a>
-<div class="author-heading">
-<div class="profile-img">
-<a href="project-details.html">
-<img src="<?php echo base_url()?>assets/frontends/img/company/img-1.png" alt="author">
-<span class="project-verified"><i class="fas fa-check-circle"></i></span>
-</a>
-</div>
-<div class="profile-name">
-<div class="author-location"><a href="project-details.html">Amaze Tech </a></div>
-</div>
-
-
-<div class="freelancers-price"></div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-<div class="col-md-6 col-lg-12 col-xl-3">
-<div class="freelance-widget widget-author">
-<div class="freelance-content">
-<a data-bs-toggle="modal" href="#rating" class="favourite favourited"><i class="fas fa-star"></i></a>
-<div class="author-heading">
-<div class="profile-img">
-<a href="project-details.html">
-<img src="<?php echo base_url()?>assets/frontends/img/company/img-1.png" alt="author">
-<span class="project-verified"><i class="fas fa-check-circle"></i></span>
-</a>
-</div>
-<div class="profile-name">
-<div class="author-location"><a href="project-details.html">Amaze Tech </a></div>
-</div>
-
-
-<div class="freelancers-price"></div>
-</div>
-
-</div>
-
-</div>
-</div>
+          <div class="author-heading">
+          <div class="profile-img">
+          <a href="<?php echo base_url() ?>layanan-detail/<?php echo $post->services_judul_seo?>">
+          <?php if(empty($post->services_gambar)) { ?>
+          <img src="<?php echo base_url()?>assets/frontends/img/company/img-2.png" alt="author">
+        <?php }else{ ?>
+          <img src="<?php echo base_url()?>bahan/foto_products/<?php echo $post->services_gambar?>" alt="author">
+        <?php } ?>
+        
+          </a>
+          </div>
+          <div class="profile-name">
+          <div class="author-location"><a href="<?php echo base_url() ?>layanan-detail/<?php echo $post->services_judul_seo?>"><?php echo $post->services_judul?></a></div>
+          </div>
+          <div class="freelancers-price"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
 
 
 </div>
