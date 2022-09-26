@@ -72,7 +72,7 @@
 
           <div class="author-heading">
           <div class="profile-img">
-          <a href="<?php echo base_url() ?>layanan-detail/<?php echo $post->services_judul_seo?>">
+          <a href="<?php echo base_url() ?>layanan/layanan_detail/detail">
           <?php if(empty($post->services_gambar)) { ?>
           <img src="<?php echo base_url()?>assets/frontends/img/company/img-2.png" alt="author">
         <?php }else{ ?>
@@ -82,7 +82,7 @@
           </a>
           </div>
           <div class="profile-name">
-          <div class="author-location"><a href="<?php echo base_url() ?>layanan-detail/<?php echo $post->services_judul_seo?>"><?php echo $post->services_judul?></a></div>
+          <div class="author-location"><a href="<?php echo base_url() ?>layanan/layanan_detail/detail"><?php echo $post->services_judul?></a></div>
           </div>
           <div class="freelancers-price"></div>
           </div>
