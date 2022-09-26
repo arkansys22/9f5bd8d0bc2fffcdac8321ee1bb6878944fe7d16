@@ -15098,7 +15098,9 @@ body.chat-page {
     font-size: 16px;
     margin-bottom: 5px;
     text-transform: capitalize;
-	color: #FF5B37;
+    /*Disable by Bayu*/
+	/*color: #FF5B37;*/
+	color: var(--bluelegia);
 }
 .bookmark-projects .freelance-info h3 a {
 	font-size: 12px;
