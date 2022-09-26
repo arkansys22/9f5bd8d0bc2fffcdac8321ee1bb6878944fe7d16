@@ -62,7 +62,7 @@
     </div>
   </div>
 </ul>
-<ul class="nav header-navbar-rht text-center main-nav">
+<ul class="nav header-navbar-rht text-center main-nav hide-mobile">
   <li><a href="login.html" class="log-btn btn-login-custom"><i class="fas fa-lock"></i> Login</a></li>
 
   <li class="has-submenu btn-bahasa">

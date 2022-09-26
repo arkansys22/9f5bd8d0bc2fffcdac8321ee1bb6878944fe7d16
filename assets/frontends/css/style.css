@@ -2341,7 +2341,7 @@ label {
 }
 .header-four .header-navbar-rht .login-btn,
 .header-four .header-navbar-rht .login-btn:hover {
-    background: #02164c;
+    background: var(--bluelegia);
 	border-radius: 10px;
 	border: 0;
 	box-shadow: none;
@@ -2353,21 +2353,21 @@ label {
 }
 .header-four .main-nav .has-submenu.active .submenu li.active > a,
 .header-four .main-nav > li .submenu li a:hover {
-    background-color: #00C4CF;
+    background-color: black;
 }
 .header-four .main-nav li a,
 .header-four .header-navbar-rht li a {
-	color: #19283E;
+	color: var(--bluelegia);
 }
 .header-four .main-nav > li.active > a {
-    color: #00C4CF;
+    color: black;
 }
 .header-four .main-nav > li > a:hover {
-    color: #f00;
+    color: black;
 }
 .header-four .header-navbar-rht li a:hover,
 .header-four .header-navbar-rht li a:focus {
-    color: #f00;
+    color: black;
 }
 .sign-page {
 	background: #F6F6F7;
@@ -4750,7 +4750,7 @@ transition: 0.8s !important;
 }
 .home-four .banner-content h1 .orange-text {
     font-weight: 700;
-    color: #00C4CF;
+    color: black;
 }
 .market-place {
 	min-height: 530px;
@@ -4783,7 +4783,7 @@ transition: 0.8s !important;
 }
 .dot-head li:nth-child(1) i {
 	font-size: 16px;
-	color: #00C4CF;
+	color: black;
 }
 .dot-head li:nth-child(5) {
 	margin-right: 0px;
@@ -4803,7 +4803,7 @@ transition: 0.8s !important;
 .home-four .banner-content .sub-btn {
 	min-width: 156px;
 	height: 70px;
-	background: linear-gradient(101.19deg, #A64AC9 0%, #00C4CF 100%);
+	background: linear-gradient(101.19deg, #A64AC9 0%, black 100%);
 	border-radius: 10px !important;
 	border: 0;
 	text-transform: capitalize;
@@ -4838,7 +4838,7 @@ transition: 0.8s !important;
     -webkit-transition: all 0.5s ease;
 }
 .feature-four .feature-item:hover {
-	background: linear-gradient(101.19deg, #A64AC9 0%, #00C4CF 100%);
+	background: linear-gradient(101.19deg, #A64AC9 0%, black 100%);
 	transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -4864,7 +4864,8 @@ transition: 0.8s !important;
 .feature-four .feature-content p {
 	font-size: 20px;
 	margin-bottom: 17px;
-	color: #19283E;
+	/*color: #19283E;*/
+	color: var(--bluelegia);
 	transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -4873,7 +4874,7 @@ transition: 0.8s !important;
 }
 .feature-four .feature-content h3 {
 	margin-bottom: 0px;
-	color: #00C4CF;
+	color: black;
 	font-size: 36px;
 	transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -4898,14 +4899,14 @@ transition: 0.8s !important;
 	margin-bottom: 12px;
 }
 .want-to-work {
-	background: #02164c;
+	background: var(--bluelegia);
 	color: #fff;
 }
 .want-to-work h2 {
 	color: #fff;
 }
 .more-learn .btn-primary {
-	background: #02164c;
+	background: var(--bluelegia);
 	border-radius: 10px;
 	min-width: 156px;
 	padding: 13px 10px;
@@ -4917,7 +4918,8 @@ transition: 0.8s !important;
 }
 .projects-four {
 	background: #F6F6F7;
-	background-image: url(../img/bg/bg-09.png);
+	/*Disable by Bayu*/
+	/*background-image: url(../img/bg/bg-09.png);*/
 	background-repeat: no-repeat, no-repeat;
     background-position:  left bottom;
 }
@@ -4937,7 +4939,7 @@ transition: 0.8s !important;
 }
 .browse-all .btn-primary:hover {
 	color: #fff;
-	background: linear-gradient(101.19deg, #A64AC9 0%, #00C4CF 100%);
+	background: linear-gradient(101.19deg, #A64AC9 0%, black 100%);
 	border: 0;
 }
 .developer-all .btn-primary {
@@ -4961,7 +4963,7 @@ transition: 0.8s !important;
 	color: #A64AC9;
 }
 .count-sky h4 i {
-	color: #00C4CF;
+	color: black;
 }
 .projects-four .project-item {
 	border: 1px solid #E5E5E5;
@@ -4970,7 +4972,7 @@ transition: 0.8s !important;
     color: #19283E;
 }
 .projects-four .inspired-group h5 a:hover {
-	color: #00c4cf;
+	color: black;
 }
 .projects-four .inspired-group h5,
 .projects-four .count-number h4 {
@@ -4982,7 +4984,7 @@ transition: 0.8s !important;
 	padding: 60px 0px 0px;
 }
 .discount-four {
-	background: linear-gradient(101.19deg, #A64AC9 0%, #00C4CF 100%);
+	background: linear-gradient(101.19deg, #A64AC9 0%, black 100%);
 	border-radius: 10px;
 	padding: 40px;
 }
@@ -4990,7 +4992,7 @@ transition: 0.8s !important;
 	border-radius: 10px;
 }
 .subscribe-four .sub-btn {
-	background: linear-gradient(101.19deg, #A64AC9 0%, #00C4CF 100%);
+	background: linear-gradient(101.19deg, #A64AC9 0%, black 100%);
     border-radius: 10px !important;
     border: 0;
     font-size: 16px;
@@ -5001,7 +5003,7 @@ transition: 0.8s !important;
 	height: 50px;
 }
 .subscribe-four .sub-btn:hover {
-	background: linear-gradient(101.19deg, #A64AC9 0%, #00C4CF 100%);
+	background: linear-gradient(101.19deg, #A64AC9 0%, black 100%);
     border-radius: 10px !important;
     border: 0;
     color: #fff;
@@ -5017,7 +5019,7 @@ transition: 0.8s !important;
     background-position: left center;
 }
 .developer-four h3 a:hover {
-	color: #00C4CF;
+	color: black;
 }
 .designation a {
 	border-radius: 5px;
@@ -5029,7 +5031,7 @@ transition: 0.8s !important;
 .sky,
 .sky:hover {
 	background: rgba(0, 196, 207, 0.1);
-	color: #00C4CF;
+	color: black;
 }
 .pink,
 .pink:hover {
@@ -5102,7 +5104,7 @@ transition: 0.8s !important;
 	color: #A4A4A4;
 }
 .mark-book i:hover {
-	color: #00C4CF;
+	color: black;
 }
 .developer-four .freelance-info h3 i {
 	color: #00D021;
@@ -5123,8 +5125,11 @@ transition: 0.8s !important;
 	padding: 8px 10px;
 }
 .blog-read .btn-primary:hover {
-	background: linear-gradient(101.19deg, #A64AC9 0%, #00C4CF 100%);
+	/*Add & Disable by Bayu*/
+	/*background: linear-gradient(101.19deg, #A64AC9 0%, #00C4CF 100%);*/
+	background: var(--bluelegia);
 	border: 0;
+	color: white;
 }
 .news-four .blog.grid-blog {
 	padding: 0;
@@ -5145,7 +5150,7 @@ transition: 0.8s !important;
     margin-bottom: 25px;
 }
 .news-four .blog-title a:hover {
-    color: #00C4CF;
+    color: black;
 }
 .review-four {
 	padding: 80px 0px;
@@ -5224,7 +5229,7 @@ transition: 0.8s !important;
     top: inherit;
 }
 .review-four .slick-prev:hover {
-	background: #00C4CF;
+	background: black;
 }
 .review-four .slick-next {
     right: 62%;
@@ -5236,7 +5241,7 @@ transition: 0.8s !important;
     top: inherit;
 }
 .review-four .slick-next:hover {
-	background: #00C4CF;
+	background: black;
 }
 .review-four .slick-next:before .testimonial-two .slick-next:hover {
 	color: #fff;
@@ -5263,7 +5268,7 @@ transition: 0.8s !important;
 .review-four .slick-next:focus,
 .review-four .slick-prev:focus {
 	color: #000;
-    background: #00C4CF;
+    background: black;
 }
 .review-four .slick-prev:before,
 .review-four .slick-next:before {
@@ -13567,7 +13572,7 @@ body.chat-page {
     background-image: url(../img/bg/footer-four-bg.jpg);
 }
 .footer-four .footer-title {
-	color: #00C4CF;
+	color: black;
 	padding: 0;
     margin-bottom: 24px;
 	font-size: 18px;
@@ -13576,7 +13581,7 @@ body.chat-page {
     padding: 80px 0 40px;
 }
 .footer-four .off-address a span {
-    color: #00C4CF;
+    color: black;
 }
 .footer-four .footer-address {
 	font-size: 13px;
@@ -13586,7 +13591,7 @@ body.chat-page {
 	max-width: 160px;
 }
 .footer-four .footer-menu ul li a:hover {
-    color: #00C4CF;
+    color: black;
 }
 .footer-four .footer-menu ul li a {
 	color: #fff;
@@ -13613,7 +13618,7 @@ body.chat-page {
 }
 .footer-four .social-icon ul li a:hover {
 	background: #fff;
-	color: #00C4CF;
+	color: black;
 	transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -17000,14 +17005,14 @@ body.chat-page {
 	}
 	.header-four .bar-icon span,
 	.header-four .main-menu-wrapper {
-		background-color: #00c4cf;
+		background-color: black;
 	}
 	.header-four .main-nav > li {
-		border-bottom: 1px solid #02164c;
+		border-bottom: 1px solid var(--bluelegia);
 	}
 	.header-four .menu-header {
 		background-color: #fff;
-		border-bottom: 1px solid #02164c;
+		border-bottom: 1px solid var(--bluelegia);
 	}
 	.header-four .main-nav .has-submenu.active > a,
 	.header-four .main-nav > li.active > a,
@@ -19088,6 +19093,9 @@ body.chat-page {
 /*-----------------
 	39. Bayu's Customize
 -----------------------*/
+:root {
+	--bluelegia: #292663;
+}
 .chat-cont-left-header .chat-search .input-group .input-group-prepend {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -19104,7 +19112,7 @@ body.chat-page {
 	z-index: 4;
 }
 .icon-circle {
-	background: #f00;
+	background: var(--bluelegia);
 }
 .btn-bahasa{
 	align-items: center;
@@ -19115,9 +19123,6 @@ body.chat-page {
 }
 .header-four .header-navbar-rht .login-btn, .header-four .header-navbar-rht .login-btn:hover {
 	min-width: 120px;
-}
-.header-four .main-nav ul {
-	background-color: rgb(95, 91, 176);
 }
 .main-nav li > ul.custom-width-bahasa {
 	min-width: 120px;
@@ -19131,25 +19136,48 @@ body.chat-page {
 		background-size: 100%;
 	}
 	.market-place {
-		min-height: 430px;
+		min-height: auto;
+		margin: 12rem 0 0 0;
 	}
 }
 
 @media only screen and (max-width:991px) {
+	.header-four .main-nav ul {
+		/*background-color: rgb(95, 91, 176);*/
+		background-color: white;
+	}
+	.navbar-brand.logo .img-fluid{
+		width: 10rem !important;
+	}
+	.header-four .main-nav > li > a, .header-four .main-nav > li .submenu li a{
+		color: #000;
+	}
+	.hide-mobile{
+		display: none;
+	}
 	.home-four {
 		background-image: url(../img/legia2.png);
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: bottom;
 		background-size: 100%;
 	}
 	.header-four .bar-icon span, .header-four .main-menu-wrapper {
-		background-color: #292664;
+		background-color: var(--bluelegia);
 	}
 	.header-four .main-nav .has-submenu.active .submenu li.active > a, .header-four .main-nav > li .submenu li a:hover {
-		background-color: #00c4cf;
+		/*background-color: black;*/
+		background-color: black;
+	}
+	.header-four .main-nav .has-submenu.active .submenu li.active > a {
+		color: white;
 	}
 	.menu-close i {
-		color: #f00;
+		/*color: #f00;*/
+		color: black;
+	}
+	.market-place {
+		min-height: auto;
+		margin: 28rem 0 0 0;
 	}
 }
 
@@ -19161,8 +19189,8 @@ body.chat-page {
 
 .feature-four .feature-item:hover {
 	/*background: rgb(41, 38, 100);*/
-	background: #02164c;
+	background: var(--bluelegia);
 }
 .feature-four .feature-content h3 {
-	color: #292664;
+	color: var(--bluelegia);
 }
