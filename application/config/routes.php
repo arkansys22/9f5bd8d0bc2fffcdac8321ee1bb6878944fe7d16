@@ -7,6 +7,7 @@ $route['layanan/(:any)'] = "layanan/product_category/$1";
 $route['layanan-detail/(:any)'] = "layanan/detail/$1";
 $route['about'] = "about/index";
 $route['gallery'] = "gallery/index";
+$route['layanan/layanan_detail/detail'] = "layanan/layanan_detail";
 
 
 $route['blogs'] = "blogs/index";

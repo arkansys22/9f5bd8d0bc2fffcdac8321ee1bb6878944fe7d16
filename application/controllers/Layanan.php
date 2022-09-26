@@ -43,5 +43,9 @@ class Layanan extends CI_Controller {
 						}
 				}
 
+public function layanan_detail()
+	{
 
+		$this->load->view('frontends/layanan/konsultasi_online/detail/index');
+	}
 }
