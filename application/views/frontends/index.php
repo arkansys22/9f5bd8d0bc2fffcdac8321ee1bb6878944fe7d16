@@ -15,17 +15,18 @@
 
 
 <section class="section home-banner row-middle home-four">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-md-10 col-lg-8">
-<div class="market-place d-flex align-items-center">
-<div class="banner-content aos" data-aos="fade-up">
 
-</div>
-</div>
-</div>
-</div>
-</div>
+  <img src="<?php echo base_url()?>assets/frontends/img/legia2.png" class="img-fluid" alt="Legia">
+  <div class="container absolute">
+    <div class="row align-items-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="market-place d-flex align-items-center">
+          <div class="banner-content aos" data-aos="fade-up">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 

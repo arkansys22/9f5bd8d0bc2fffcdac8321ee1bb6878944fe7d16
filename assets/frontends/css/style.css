@@ -4739,7 +4739,7 @@ transition: 0.8s !important;
 -----------------------*/
 
 .home-four {
-    background-image: url(../img/legia2.png);
+    /*background-image: url(../img/legia2.png);*/
 	margin-top: 85px;
 	padding:0;
 }
@@ -19113,6 +19113,9 @@ body.chat-page {
 	top: 0;
 	z-index: 4;
 }
+.absolute{
+	position: absolute;
+}
 .icon-circle {
 	background: var(--bluelegia);
 }
@@ -19131,10 +19134,9 @@ body.chat-page {
 }
 @media only screen and (max-width:479px) {
 	.home-four {
-		margin-top: 0;
-		background-image: url(../img/legia2.png);
+		/*background-image: url(../img/legia2.png);*/
 		background-repeat: no-repeat;
-		background-position: center;
+		background-position: bottom;
 		background-size: 100%;
 	}
 	.market-place {
@@ -19143,7 +19145,7 @@ body.chat-page {
 	}
 }
 
-@media only screen and (max-width:991px) {
+@media screen and (min-width: 480px) and (max-width: 991px) {
 	.header-four .main-nav ul {
 		/*background-color: rgb(95, 91, 176);*/
 		background-color: white;
@@ -19158,7 +19160,7 @@ body.chat-page {
 		display: none;
 	}
 	.home-four {
-		background-image: url(../img/legia2.png);
+		/*background-image: url(../img/legia2.png);*/
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-size: 100%;
