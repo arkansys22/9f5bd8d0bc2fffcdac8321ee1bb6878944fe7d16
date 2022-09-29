@@ -19133,15 +19133,35 @@ body.chat-page {
 	min-width: 120px;
 }
 @media only screen and (max-width:479px) {
+	.header-four .main-nav ul {
+		/*background-color: rgb(95, 91, 176);*/
+		background-color: white;
+	}
+	.navbar-brand.logo .img-fluid{
+		width: 10rem !important;
+	}
 	.home-four {
 		/*background-image: url(../img/legia2.png);*/
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-size: 100%;
 	}
+	.header-four .main-nav > li > a, .header-four .main-nav > li .submenu li a{
+		color: #000;
+	}
+	.header-four .bar-icon span, .header-four .main-menu-wrapper {
+		background-color: var(--bluelegia);
+	}
+	.header-four .main-nav .has-submenu.active .submenu li.active > a, .header-four .main-nav > li .submenu li a:hover {
+		background-color: black;
+	}
 	.market-place {
 		min-height: auto;
 		margin: 12rem 0 0 0;
+	}
+	.menu-close i {
+		/*color: #f00;*/
+		color: black;
 	}
 }
 
@@ -19169,7 +19189,6 @@ body.chat-page {
 		background-color: var(--bluelegia);
 	}
 	.header-four .main-nav .has-submenu.active .submenu li.active > a, .header-four .main-nav > li .submenu li a:hover {
-		/*background-color: black;*/
 		background-color: black;
 	}
 	.header-four .main-nav .has-submenu.active .submenu li.active > a {
