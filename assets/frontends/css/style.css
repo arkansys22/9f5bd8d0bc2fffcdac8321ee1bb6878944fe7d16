@@ -2525,7 +2525,8 @@ html.menu-opened body header:before {
 -----------------------*/
 
 .home-banner {
-    background-image: url(../img/banner2.png);
+	/*Disable by Bayu*/
+    /*background-image: url(../img/banner2.png);*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19097,6 +19098,11 @@ body.chat-page {
 -----------------------*/
 :root {
 	--bluelegia: #292663;
+	--purple: #A64AC9;
+	--thinpurple: #F8F3FF;
+}
+a:hover {
+  color: var(--purple);
 }
 .chat-cont-left-header .chat-search .input-group .input-group-prepend {
 	-webkit-box-align: center;
@@ -19115,6 +19121,10 @@ body.chat-page {
 }
 .absolute{
 	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
 }
 .icon-circle {
 	background: var(--bluelegia);
@@ -19216,4 +19226,22 @@ body.chat-page {
 }
 .feature-four .feature-content h3 {
 	color: var(--bluelegia);
+}
+.bread-crumb-bar {
+  background-color: var(--thinpurple);
+}
+.page-breadcrumb .breadcrumb a:hover {
+  color: var(--purple);
+}
+.btn-cart {
+  background: var(--bluelegia);
+}
+.btn-cart:hover, .btn-cart:focus {
+  background: white;
+  color: var(--bluelegia);
+  border: 0.15rem solid var(--bluelegia);
+}
+.relavance-result h4 {
+  font-size: 14px;
+  color: var(--bluelegia);
 }
