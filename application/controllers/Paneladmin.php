@@ -1621,25 +1621,10 @@ class Paneladmin extends CI_Controller {
 											$this->Crud_m->tambah_user_detail($data_user_detail);
 											redirect('paneladmin/data_karyawan');
 				}else{
-					$data['karyawan_menu_open']   = 'menu-open';
-					$data['home_stat']   = '';
-					$data['identitas_stat']   = '';
-					$data['profil_stat']   = '';
-					$data['sliders_stat']   = 'active';
-					$data['products_stat']   = '';
-					$data['cat_products_stat']   = 'active';
-					$data['testimonial_stat']   = '';
-					$data['blogs_stat']   = '';
-					$data['message_stat']   = '';
-					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
-					$data['produk_menu_open']   = '';
-		 			$data['produk_category']   = '';
-		 			$data['produk']   = '';
-		 			$data['services']   = '';
 
 					$data['records'] = $this->Crud_m->view_ordering('user_level','user_level_id','DESC');
-					$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
+					$data['records_divisi'] = $this->Crud_m->view_where_ordering('divisi',array('divisi_status'=>'publish'),'divisi_id','DESC');
 					$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
 					$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
 					$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');
@@ -1808,25 +1793,9 @@ class Paneladmin extends CI_Controller {
 						$proses = $this->Crud_m->view_join_where2('user','user_detail','id_user',array('id_session' => $id))->row_array();
 				}
 			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = 'menu-open';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = 'active';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = 'active';
-			$data['testimonial_stat']   = '';
-			$data['blogs_stat']   = '';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-
-			$data['produk_menu_open']   = '';
- 			$data['produk_category']   = '';
- 			$data['produk']   = '';
- 			$data['services']   = '';
 
 			$data['records'] = $this->Crud_m->view_ordering('user_level','user_level_id','DESC');
-			$data['records_divisi'] = $this->Crud_m->view_ordering('divisi','divisi_id','DESC');
+			$data['records_divisi'] = $this->Crud_m->view_where_ordering('divisi',array('divisi_status'=>'publish'),'divisi_id','DESC');
 			$data['records_kel'] = $this->Crud_m->view_ordering('user_kelamin','user_kelamin_id','DESC');
 			$data['records_agama'] = $this->Crud_m->view_ordering('user_agama','user_agama_id','ASC');
 			$data['records_kawin'] = $this->Crud_m->view_ordering('user_perkawinan','user_perkawinan_id','ASC');

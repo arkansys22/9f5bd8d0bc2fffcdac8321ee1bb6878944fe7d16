@@ -43,7 +43,7 @@
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label>Kode Divisi</label>
-                        <input type="text" class="form-control" name="products_cat_meta_desk" placeholder="Kode divisi">
+                        <input type="text" class="form-control" name="divisi_meta_desk" placeholder="Kode divisi">
                       </div>
                     </div>
                   </div>
@@ -51,7 +51,7 @@
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label>Nama Divisi</label>
-                        <input type="text" class="form-control" name="products_cat_judul" placeholder="Nama Divisi">
+                        <input type="text" class="form-control" name="divisi_judul" placeholder="Nama Divisi">
                       </div>
                     </div>
                   </div>
@@ -59,7 +59,7 @@
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label>Deskripsi</label>
-                        <textarea class="textarea"  name ="products_cat_desk" style="width: 100%; height: 100px;"></textarea>
+                        <textarea class="textarea"  name ="divisi_desk" style="width: 100%; height: 100px;"></textarea>
                       </div>
                     </div>
                   </div>

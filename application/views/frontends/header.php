@@ -24,7 +24,7 @@
 </div>
 <ul class="main-nav">
   <li>
-  <a href="<?php echo base_url()?>" target="_blank">Beranda</a>
+  <a href="<?php echo base_url()?>">Beranda</a>
   </li>
   <li>
   <a href="#" target="_blank">Tentang Kami</a>
