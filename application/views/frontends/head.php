@@ -1,7 +1,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-<title>KofeJob</title>
+<title>L</title>
 
 <link rel="shortcut icon" href="<?php echo base_url()?>assets/frontends/img/favicon.png" type="image/x-icon">
 

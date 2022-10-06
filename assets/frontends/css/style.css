@@ -12823,7 +12823,8 @@ ul {
 -----------------------*/
 
 .footer {
-    background-image: url(../img/bg/footer-bg.png);
+    /*background-image: url(../img/bg/footer-bg.png);*/
+    background-image: url(../img/bg/footer-background.jpg);
     background-position: top;
     background-repeat: no-repeat;
     position: relative;
@@ -13573,7 +13574,7 @@ body.chat-page {
     background-image: url(../img/bg/footer-four-bg.jpg);
 }
 .footer-four .footer-title {
-	color: black;
+	color: white;
 	padding: 0;
     margin-bottom: 24px;
 	font-size: 18px;
@@ -19100,6 +19101,7 @@ body.chat-page {
 	--bluelegia: #292663;
 	--purple: #A64AC9;
 	--thinpurple: #F8F3FF;
+	--gray: #d0c0c0;
 }
 a:hover {
   color: var(--purple);
@@ -19244,4 +19246,33 @@ a:hover {
 .relavance-result h4 {
   font-size: 14px;
   color: var(--bluelegia);
+}
+.footer-four {
+  background-image: unset;
+}
+.footer-title{
+	color: white !important;
+}
+h2.footer-title::after {
+  background: var(--gray);
+}
+.footer .footer-menu ul li a:hover {
+  color: var(--purple);
+}
+.social-icon ul li a {
+  color: white;
+}
+
+.footer-five::before {
+  content: unset;
+}
+.footer-menu ul li {
+  display: flex;
+}
+.footer-menu ul li i {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
 }
