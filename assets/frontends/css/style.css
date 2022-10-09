@@ -12875,7 +12875,8 @@ h2.footer-title:after {
 	margin-bottom: 0;
 }
 .footer .footer-menu ul li a {
-    color: #E5E5E5;
+    /*color: #E5E5E5;*/
+    color: white;
     font-size: 16px;
     position: relative;
     transition: all 0.4s ease;
@@ -19254,7 +19255,7 @@ a:hover {
 	color: white !important;
 }
 h2.footer-title::after {
-  background: var(--gray);
+  background: var(--bluelegia);
 }
 .footer .footer-menu ul li a:hover {
   color: var(--purple);
