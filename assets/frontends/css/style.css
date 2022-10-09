@@ -12962,7 +12962,8 @@ h2.footer-title:after {
 }
 .copyright {
     padding: 30px 0;
-    border-top: 1px solid #252347;
+    /*border-top: 1px solid #252347;*/
+    border-top: 1px solid var(--bluelegia);
 }
 .copyright-text p, .copyright-text p a {
 	color: #fff;
