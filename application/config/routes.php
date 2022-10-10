@@ -1,13 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
-$route['login'] = "paneladmin/login";
-$route['works'] = "product/index";
+//Indonesia Language
+$route['masuk'] = "User/login_id";
+$route['daftar'] = "User/register_pengacara_id";
+$route['daftar_notaris'] = "User/register_notaris_id";
+$route['daftar_perusahaan'] = "User/register_perusahaan_id";
 $route['layanan/(:any)'] = "layanan/product_category/$1";
 $route['layanan-detail/(:any)'] = "layanan/detail/$1";
-$route['about'] = "about/index";
-$route['gallery'] = "gallery/index";
 $route['layanan/layanan_detail/detail'] = "layanan/layanan_detail";
+
+$route['dashboard-perusahaan'] = "Perusahaan/index";
 
 
 $route['blogs'] = "blogs/index";
