@@ -15,42 +15,46 @@
 
 
   <div class="content">
-  <div class="container">
-  <div class="row">
-  <div class="col-md-6 offset-md-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
 
-  <div class="account-content">
-  <div class="align-items-center justify-content-center">
-  <div class="login-right">
-  <div class="login-header text-center">
-    <hr>
-  <h3>Silahkan Masuk</h3>
-  </div>
-  <form action="<?php echo base_url()?>">
-  <div class="form-group form-focus">
-  <input type="text" class="form-control floating">
-  <label class="focus-label">Email</label>
-  </div>
-  <div class="form-group form-focus">
-  <input type="kata sandi" class="form-control floating">
-  <label class="focus-label">Kata Sandi</label>
-  </div>
-  <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Login</button>
+          <div class="account-content">
+            <div class="align-items-center justify-content-center">
+              <div class="login-right">
+                <div class="login-header text-center">
+                  <hr>
+                  <h3>Silahkan Masuk</h3>
+                </div>
+                <form action="<?php echo base_url()?>">
+                  <div class="form-group form-focus">
+                    <input type="text" class="form-control floating">
+                    <label class="focus-label">Email</label>
+                  </div>
+                  <div class="form-group form-focus">
+                    <input type="kata sandi" class="form-control floating">
+                    <label class="focus-label">Kata Sandi</label>
+                  </div>
 
-  <div class="row">
-  <div class="col-6 text-start">
-  <a class="forgot-link" href="#">Lupa kata sandi ?</a>
-  </div>
-  <div class="col-6 text-end dont-have">Tidak punya akun? <a href="<?php echo base_url()?>daftar">Buat Akun</a></div>
-  </div>
-  </form>
-  </div>
-  </div>
-  </div>
+                  <!-- <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Login</button> -->
+                  <div class="blog-read">
+                    <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Login</button>
+                  </div>
 
-  </div>
-  </div>
-  </div>
+                  <div class="row">
+                    <div class="col-6 text-start">
+                      <a class="forgot-link" href="#">Lupa kata sandi ?</a>
+                    </div>
+                    <div class="col-6 text-end dont-have">Tidak punya akun? <a href="<?php echo base_url()?>daftar">Buat Akun</a></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
 
 

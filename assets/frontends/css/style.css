@@ -557,16 +557,21 @@ button.bg-danger:hover {
     color: #757575 !important;
 }
 .btn-primary {
-	background-color: #FF5B37;
-	border: 1px solid #FF5B37;
+	/*background-color: #FF5B37;
+	border: 1px solid #FF5B37;*/
+	color: var(--bluelegia);
+	background-color: white;
+	border: 1px solid var(--bluelegia);
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.active,
 .btn-primary:active,
 .open > .dropdown-toggle.btn-primary {
-	background-color: #ff431a;
-	border: 1px solid #ff431a;
+	/*background-color: #ff431a;
+	border: 1px solid #ff431a;*/
+	background-color: var(--bluelegia);
+	border: 1px solid var(--bluelegia);
 	box-shadow: unset;
 }
 .btn-primary.active.focus,
@@ -11328,7 +11333,8 @@ label.file-upload  input[type="file"] {
     margin-bottom: 30px;
 }
 .settings-header {
-	background: #ff5b37;
+	/*background: #ff5b37;*/
+	background: var(--bluelegia);
 	padding: 20px;
 }
 .settings-header h3, .settings-header h3 a {
@@ -11360,12 +11366,14 @@ label.file-upload  input[type="file"] {
     line-height: normal;
 }
 .settings-menu ul li a:hover, .settings-menu ul li a:focus {
-    color: #ff5b37;
+    /*color: #ff5b37;*/
+    color: var(--bluelegia);
 	background-color: transparent !important;
 	border: 0 !important;
 }
 .settings-menu ul li a.active {
-	color: #ff5b37 !important;
+	/*color: #ff5b37 !important;*/
+	color: var(--bluelegia) !important;
 	border: 0;
 }
 .settings-menu ul li a i {
@@ -11391,7 +11399,8 @@ label.file-upload  input[type="file"] {
 .dash-widget-count {
     font-weight: bold;
     font-size: 30px;
-    color: #ff5b37;
+    /*color: #ff5b37;*/
+    color: var(--bluelegia);
     line-height: 1.2;
 }
 .dash-widget-more {
@@ -11401,7 +11410,8 @@ label.file-upload  input[type="file"] {
 	font-weight: 600;
 	font-size: 24px;
 	margin-bottom: 0;
-	color: #ff5b37;
+	/*color: #ff5b37;*/
+	color: var(--bluelegia);
 }
 .plan-details h3 {
 	font-weight: 500;
@@ -11815,7 +11825,8 @@ label.award-upload input[type="file"] {
 	color: #4B9F18;
 }
 .table .thead-pink th {
-    color: #ff5b37;
+    /*color: #ff5b37;*/
+    color: var(--bluelegia);
     background-color: #FFF6F4;
     border-color: #FFF6F4;
 }
@@ -19240,6 +19251,11 @@ a:hover {
 .btn-cart {
   background: var(--bluelegia);
 }
+.btn-bluelegia {
+  background: var(--bluelegia);
+  color: white;
+  border: 1px solid var(--bluelegia);
+}
 .btn-cart:hover, .btn-cart:focus {
   background: white;
   color: var(--bluelegia);
@@ -19277,4 +19293,40 @@ h2.footer-title::after {
   align-items: center;
   justify-content: center;
   font-size: 14px;
+}
+.login-right .dont-have a {
+  color: var(--bluelegia);
+}
+.form-focus .form-control {
+  border: 1px solid var(--thinpurple);
+}
+.login-header h3 {
+  color: var(--bluelegia);
+}
+.form-focus .focus-label {
+  color: var(--bluelegia);
+}
+.user-tabs .nav-pills .nav-link.active, .user-tabs .nav-pills .show > .nav-link {
+  background-color: var(--bluelegia);
+  border: 1px solid var(--bluelegia);
+}
+.user-tabs .nav-pills .nav-link {
+  color: var(--bluelegia);
+  border: 1px solid var(--bluelegia);
+}
+.btn-primary.active:not(:disabled):not(.disabled), .btn-primary:active:not(:disabled):not(.disabled), .show > .btn-primary.dropdown-toggle {
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
+.get-btn {
+  background: white;
+  border-color: var(--bluelegia);
+  color: var(--bluelegia);
+}
+.get-btn:hover {
+  background-color: var(--bluelegia);
+  border-color: var(--bluelegia);
+}
+.bluelegia-text {
+  color: var(--bluelegia);
 }

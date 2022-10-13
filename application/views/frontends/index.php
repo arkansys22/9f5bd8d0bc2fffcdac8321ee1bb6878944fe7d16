@@ -762,19 +762,12 @@
 
 </div>
 
-
 <script src="<?php echo base_url()?>assets/frontends/js/jquery-3.6.0.min.js"></script>
-
 <script src="<?php echo base_url()?>assets/frontends/js/bootstrap.bundle.min.js"></script>
-
 <script src="<?php echo base_url()?>assets/frontends/js/owl.carousel.min.js"></script>
-
 <script src="<?php echo base_url()?>assets/frontends/plugins/aos/aos.js"></script>
-
 <script src="<?php echo base_url()?>assets/frontends/plugins/select2/js/select2.min.js"></script>
-
 <script src="<?php echo base_url()?>assets/frontends/js/slick.js"></script>
-
 <script src="<?php echo base_url()?>assets/frontends/js/script.js"></script>
 </body>
 

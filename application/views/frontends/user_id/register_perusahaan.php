@@ -64,7 +64,10 @@
       <span class="checkmark"></span> Anda menyetujui aturan yang ada di Legia berdasarkan<a href="#">Ketentuan Pengguna, Kebijakan Privasi,</a> dan <a href="#">Kebijakan Cookie</a>.
       </label>
       </div>
-      <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Gabung</button>
+
+                      <div class="blog-read">
+                        <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Gabung</button>
+                      </div>
       <div class="row">
       <div class="col-6 text-start">
       <a class="forgot-link" href="#">Lupa Kata Sandi ?</a>
