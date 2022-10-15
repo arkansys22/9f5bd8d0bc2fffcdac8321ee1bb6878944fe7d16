@@ -559,7 +559,8 @@ button.bg-danger:hover {
 .btn-primary {
 	/*background-color: #FF5B37;
 	border: 1px solid #FF5B37;*/
-	color: var(--bluelegia);
+	/*color: var(--bluelegia);*/
+	color: white;
 	background-color: white;
 	border: 1px solid var(--bluelegia);
 }
@@ -4945,7 +4946,8 @@ transition: 0.8s !important;
 }
 .browse-all .btn-primary:hover {
 	color: #fff;
-	background: linear-gradient(101.19deg, #A64AC9 0%, black 100%);
+	/*background: linear-gradient(101.19deg, #A64AC9 0%, black 100%);*/
+	background: var(--bluelegia);
 	border: 0;
 }
 .developer-all .btn-primary {
@@ -19328,5 +19330,8 @@ h2.footer-title::after {
   border-color: var(--bluelegia);
 }
 .bluelegia-text {
+  color: var(--bluelegia);
+}
+.plan-details a, .pro-info  .list-details .slot {
   color: var(--bluelegia);
 }
