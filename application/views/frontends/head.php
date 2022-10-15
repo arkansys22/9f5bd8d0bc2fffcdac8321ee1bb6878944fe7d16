@@ -1,9 +1,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-<title>L</title>
+<title>Legia | Genggam Solusi Anda</title>
 
-<link rel="shortcut icon" href="<?php echo base_url()?>assets/frontends/img/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="<?php echo base_url()?>assets/frontends/icon-legia.png" type="image/x-icon">
 
 <link rel="stylesheet" href="<?php echo base_url()?>assets/frontends/css/bootstrap.min.css">
 
