@@ -40,6 +40,9 @@
                   <div class="blog-read">
                     <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Login</button>
                   </div>
+                  <div class="blog-read">
+                    <a class="btn btn-red btn-block btn-lg login-btn" href="<?php echo base_url()?>user/login_google">Login Google</a>
+                  </div>
 
                   <div class="row">
                     <div class="col-6 text-start">
