@@ -25,6 +25,7 @@
     <br>
     <h3>Bergabung Dengan Legia</h3>
     <p>Dapatkan Manfaat Dan Kemudahan Dalam Kepengurusan Hukum</p>
+
     </div>
     <nav class="user-tabs mb-4">
     <ul role="tablist" class="nav nav-pills nav-justified">
@@ -41,26 +42,30 @@
     </nav>
     <div class="tab-content pt-0">
       <div role="tabpanel" id="developer" class="tab-pane fade active show">
-      <form action="<?php base_url() ?>">
+      <?php echo form_open('daftar'); ?>
       <div class="form-group form-focus">
-      <input type="email" class="form-control floating">
+      <input type="text" name="username" class="form-control floating">
       <label class="focus-label">Username</label>
+      <small><?php echo form_error('username'); ?></small>
       </div>
       <div class="form-group form-focus">
-      <input type="email" class="form-control floating">
+      <input type="email" name="email" class="form-control floating">
       <label class="focus-label">Email </label>
+      <small><?php echo form_error('email'); ?></small>
       </div>
       <div class="form-group form-focus">
-      <input type="password" class="form-control floating">
+      <input type="password" name="password" class="form-control floating">
       <label class="focus-label">Password</label>
+      <small><?php echo form_error('password'); ?></small>
       </div>
       <div class="form-group form-focus mb-0">
-      <input type="password" class="form-control floating">
+      <input type="password" name="password2" class="form-control floating">
       <label class="focus-label">Confirm Password</label>
+      <small><?php echo form_error('password2'); ?></small>
        </div>
       <div class="dont-have">
       <label class="custom_check">
-      <input type="checkbox" name="rem_password">
+      <input type="checkbox" required>
       <span class="checkmark"></span> Anda menyetujui aturan yang ada di Legia berdasarkan<a href="#">Ketentuan Pengguna, Kebijakan Privasi,</a> dan <a href="#">Kebijakan Cookie</a>.
       </label>
       </div>
@@ -74,7 +79,7 @@
       </div>
       <div class="col-6 text-end dont-have">Sudah punya akun? <a href="<?php base_url() ?>masuk">Masuk</a></div>
       </div>
-      </form>
+      <?php echo form_close(); ?>
       </div>
     </div>
     </div>

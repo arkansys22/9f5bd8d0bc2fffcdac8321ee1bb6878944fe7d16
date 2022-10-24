@@ -129,7 +129,7 @@ class Paneladmin extends CI_Controller {
             $this->session->set_flashdata('user_logout', 'You are now logged out');
 						$this->session->sess_destroy();
             redirect(base_url());
-    }
+  }
 	public function profil()
 	{
 		cek_session_akses($this->session->id_session);

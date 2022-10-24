@@ -25,9 +25,9 @@
                 <div class="login-header text-center">
                   <hr>
                   <h3>Silahkan Masuk</h3>
-                  <?php echo $this->session->flashdata('user_registered'); ?>
                   <?php echo $this->session->flashdata('login_failed'); ?>
-                  <?php echo $this->session->flashdata('user_loggedout'); ?>
+                  <?php echo $this->session->flashdata('user_registered'); ?>
+                  <?php echo $this->session->flashdata('user_logout'); ?>
                 </div>
                 <?php echo form_open('masuk'); ?>
                   <div class="form-group form-focus">

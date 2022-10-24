@@ -35,9 +35,9 @@ class User extends CI_Controller {
 									$id = array('id_session' => $this->session->id_session);
 								 	$data = array('user_login_status'=>'online','user_login_tanggal'=> date('Y-m-d'),'user_login_jam'=> date('H:i:s'));
 								 	$this->db->update('user', $data, $id);
-									redirect('user/home');
+									redirect('dashboard');
 								}else {
-                $this->session->set_flashdata('login_failed', 'Email Dan Password salah!');
+                $this->session->set_flashdata('login_failed', 'Periksa kembali Email dan Password Anda');
                 redirect(base_url('masuk'));
             }
         }
@@ -46,11 +46,18 @@ class User extends CI_Controller {
 	public function home()
 	{
 			if ($this->session->level=='1'){
-
 				$this->load->view('backend/home');
 			}elseif ($this->session->level=='2'){
 				$this->load->view('backend/home');
 			}elseif ($this->session->level=='3'){
+					$this->load->view('backend/home');
+			}elseif ($this->session->level=='4'){
+					$this->load->view('frontends/pengacara_id/dashboard');
+			}elseif ($this->session->level=='5'){
+					$this->load->view('backend/home');
+			}elseif ($this->session->level=='6'){
+					$this->load->view('backend/home');
+			}elseif ($this->session->level=='7'){
 					$this->load->view('backend/home');
 			}else{
 				redirect(base_url());
@@ -59,10 +66,9 @@ class User extends CI_Controller {
 
 	public function register_pengacara_id()
 	{
-		$data['title'] = 'Sign Up';
+				$data['title'] = 'Sign Up';
         $this->form_validation->set_rules('username','','required|min_length[5]|max_length[12]|is_unique[user.username]', array('required' => 'username masih kosong','is_unique' => 'Username telah digunakan, silahkan gunakan username lain.'));
-					$this->form_validation->set_rules('nama','','required', array('required'=>'Nama masih kosong'));
-        $this->form_validation->set_rules('email','','required|valid_email|is_unique[user.email]', array('required' => 'Email masih kosong','is_unique' => 'Email telah digunakan, silahkan gunakan email lain.'));
+		    $this->form_validation->set_rules('email','','required|valid_email|is_unique[user.email]', array('required' => 'Email masih kosong','is_unique' => 'Email telah digunakan, silahkan gunakan email lain.'));
         $this->form_validation->set_rules('password','','required', array('required'=>'Password masih kosong'));
         $this->form_validation->set_rules('password2', '','required|matches[password]', array('required' => 'Konfirmasi password masih kosong','matches'=>'Password tidak sama! Cek kembali password Anda'));
 
@@ -79,16 +85,18 @@ class User extends CI_Controller {
 												'user_post_hari'=>hari_ini(date('w')),
 												'user_post_tanggal'=>date('Y-m-d'),
 												'user_post_jam'=>date('H:i:s'),
-												'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-												'nama' => $this->input->post('nama'));
+												'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'));
 							$id_pelanggan = $this->Crud_m->tambah_user($data_user);
 							$data_user_detail = array(
 										   	'id_user' => $id_pelanggan);
 							$this->Crud_m->tambah_user_detail($data_user_detail);
+							$data_user_pengacara = array(
+										   	'id_user' => $id_pelanggan);
+							$this->Crud_m->tambah_user_pengacara($data_user_pengacara);
 
-            $this->session->set_flashdata('user_registered', 'You are now registered and can log in');
+            $this->session->set_flashdata('user_registered', 'Anda Berhasil Mendaftar, Silahkan Login / Masuk Ke Legia');
 
-            redirect(base_url("login"));
+            redirect(base_url("masuk"));
         }
 	}
 
@@ -213,12 +221,20 @@ class User extends CI_Controller {
 		  }
   }
 
-    public function logout()
+	public function logout()
 	{
-	  $this->session->unset_userdata('access_token');
+		$id = array('id_session' => $this->session->id_session);
+						$data = array('user_login_status'=>'offline');
+						$this->db->update('user', $data, $id);
+						// Unset user data
+						$this->session->unset_userdata('logged_in');
+						$this->session->unset_userdata('user_id');
+						$this->session->unset_userdata('username');
 
-	  $this->session->unset_userdata('user_data');
-	  echo "Logout berhasil";
+						// Set message
+						$this->session->sess_destroy();
+						$this->session->set_flashdata('user_logout', 'Anda Berhasil Logout');						
+						redirect(base_url("masuk"));
 	}
 
 

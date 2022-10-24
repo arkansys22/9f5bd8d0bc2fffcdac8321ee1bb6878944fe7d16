@@ -285,6 +285,12 @@ class Crud_m extends CI_model{
      $id = $this->db->insert_id();
      return (isset($id)) ? $id : FALSE;
    }
+   public function tambah_user_pengacara($data)
+    {
+      $this->db->insert('user_lawyer', $data);
+      $id = $this->db->insert_id();
+      return (isset($id)) ? $id : FALSE;
+    }
   public function tambah_order($data)
    {
       $this->db->insert('products_order', $data);
