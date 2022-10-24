@@ -25,21 +25,24 @@
                 <div class="login-header text-center">
                   <hr>
                   <h3>Silahkan Masuk</h3>
+                  <?php echo $this->session->flashdata('user_registered'); ?>
+                  <?php echo $this->session->flashdata('login_failed'); ?>
+                  <?php echo $this->session->flashdata('user_loggedout'); ?>
                 </div>
-                <form action="<?php echo base_url()?>">
+                <?php echo form_open('masuk'); ?>
                   <div class="form-group form-focus">
-                    <input type="text" class="form-control floating">
+                    <input type="email" name="email" class="form-control floating">
                     <label class="focus-label">Email</label>
                   </div>
-                  <div class="form-group form-focus">
-                    <input type="kata sandi" class="form-control floating">
+                  <div class="form-group form-focus" id="show_hide_password" >
+                    <input type="password" name="password" class="form-control floating">
                     <label class="focus-label">Kata Sandi</label>
                   </div>
-
-                  <!-- <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Login</button> -->
                   <div class="blog-read">
                     <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">Login</button>
                   </div>
+                  </form>
+                <?php echo form_close(); ?>
                   <div class="blog-read">
                     <a class="btn btn-red btn-block btn-lg login-btn" href="<?php echo base_url()?>user/login_google">Login Google</a>
                   </div>

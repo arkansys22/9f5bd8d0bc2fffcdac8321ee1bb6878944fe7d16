@@ -12,21 +12,21 @@ class User extends CI_Controller {
 	{
         $data['title'] = 'Sign In';
 
-        $this->form_validation->set_rules('username', 'Username', 'required');
+        $this->form_validation->set_rules('email', 'email', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required');
         if($this->form_validation->run() === FALSE){
             $this->load->view('frontends/user_id/login', $data);
         } else {
 
-            $username = $this->input->post('username');
+            $email = $this->input->post('email');
             $password = sha1($this->input->post('password'));
-							$cek = $this->Panel_m->cek_login($username,$password,'user');
+							$cek = $this->Panel_m->cek_login($email,$password,'user');
 						    $row = $cek->row_array();
 						    $total = $cek->num_rows();
 								if ($total > 0){
 									$this->session->set_userdata(
 										array(
-											'username'=>$row['username'],
+											'email'=>$row['email'],
 											'level'=>$row['level'],
 											'id_users'=>$row['id_users'],
 											'id_session'=>$row['id_session']));
@@ -35,15 +35,27 @@ class User extends CI_Controller {
 									$id = array('id_session' => $this->session->id_session);
 								 	$data = array('user_login_status'=>'online','user_login_tanggal'=> date('Y-m-d'),'user_login_jam'=> date('H:i:s'));
 								 	$this->db->update('user', $data, $id);
-									redirect('paneladmin/home');
+									redirect('user/home');
 								}else {
-                // Set message
-                $this->session->set_flashdata('login_failed', 'Username Dan Password salah!');
-
-                redirect(base_url('login'));
+                $this->session->set_flashdata('login_failed', 'Email Dan Password salah!');
+                redirect(base_url('masuk'));
             }
         }
     }
+
+	public function home()
+	{
+			if ($this->session->level=='1'){
+
+				$this->load->view('backend/home');
+			}elseif ($this->session->level=='2'){
+				$this->load->view('backend/home');
+			}elseif ($this->session->level=='3'){
+					$this->load->view('backend/home');
+			}else{
+				redirect(base_url());
+			}
+	}
 
 	public function register_pengacara_id()
 	{
@@ -149,11 +161,14 @@ class User extends CI_Controller {
         }
 	}
 
+
+
+
 	public function login_google()
 	{
         include_once APPPATH . "../vendor/autoload.php";
 		  $google_client = new Google_Client();
-		  $google_client->setClientId('696328915160-m40bolc3g3fp338b753eagtl86b61a33.apps.googleusercontent.com'); //masukkan ClientID anda 
+		  $google_client->setClientId('696328915160-m40bolc3g3fp338b753eagtl86b61a33.apps.googleusercontent.com'); //masukkan ClientID anda
 		  $google_client->setClientSecret('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'); //masukkan Client Secret Key anda
 		  $google_client->setRedirectUri('http://localhost/sistem_sekolah/user/login_google'); //Masukkan Redirect Uri anda
 		  $google_client->addScope('email');
@@ -178,12 +193,12 @@ class User extends CI_Controller {
 		      'user_update_jam' => $current_time
 		     );
 		    $this->session->set_userdata('user_data', $data);
-		   }									
+		   }
 		  }
 		  $login_button = '';
 		  if(!$this->session->userdata('access_token'))
 		  {
-		  	
+
 		   $login_button = '<a href="'.$google_client->createAuthUrl().'"><img src="https://1.bp.blogspot.com/-gvncBD5VwqU/YEnYxS5Ht7I/AAAAAAAAAXU/fsSRah1rL9s3MXM1xv8V471cVOsQRJQlQCLcBGAsYHQ/s320/google_logo.png" /></a>';
 		   $data['login_button'] = $login_button;
 		   // $this->load->view('google_login', $data);
@@ -192,11 +207,11 @@ class User extends CI_Controller {
 		  else
 		  {
 		  	// uncomentar kode dibawah untuk melihat data session email
-		  	// echo json_encode($this->session->userdata('access_token')); 
+		  	// echo json_encode($this->session->userdata('access_token'));
 		  	// echo json_encode($this->session->userdata('user_data'));
 		   echo "Login success";
 		  }
-    }
+  }
 
     public function logout()
 	{

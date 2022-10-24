@@ -52,8 +52,8 @@ class Panel_m extends CI_Model {
    }
   }
 
-  public function cek_login($username,$password,$table){
-      return $this->db->query("SELECT * FROM $table where username='".$this->db->escape_str($username)."' AND password='".$this->db->escape_str($password)."' ");
+  public function cek_login($email,$password,$table){
+      return $this->db->query("SELECT * FROM $table where email='".$this->db->escape_str($email)."' AND password='".$this->db->escape_str($password)."' ");
   }
   public function view($table){
       return $this->db->get($table);
