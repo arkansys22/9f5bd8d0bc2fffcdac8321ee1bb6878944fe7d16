@@ -52,99 +52,25 @@ class User extends CI_Controller {
 			}elseif ($this->session->level=='3'){
 					$this->load->view('backend/home');
 			}elseif ($this->session->level=='4'){
-					$this->load->view('frontends/pengacara_id/dashboard');
+					$this->load->view('frontends/hukum_id/dashboard');
 			}elseif ($this->session->level=='5'){
-					$this->load->view('backend/home');
-			}elseif ($this->session->level=='6'){
-					$this->load->view('backend/home');
-			}elseif ($this->session->level=='7'){
-					$this->load->view('backend/home');
+					$this->load->view('frontends/pengguna_id/dashboard');
 			}else{
 				redirect(base_url());
 			}
 	}
 
-	public function register_pengacara_id()
+	public function register_hukum_id()
 	{
 				$data['title'] = 'Sign Up';
         $this->form_validation->set_rules('username','','required|min_length[5]|max_length[12]|is_unique[user.username]', array('required' => 'username masih kosong','is_unique' => 'Username telah digunakan, silahkan gunakan username lain.'));
 		    $this->form_validation->set_rules('email','','required|valid_email|is_unique[user.email]', array('required' => 'Email masih kosong','is_unique' => 'Email telah digunakan, silahkan gunakan email lain.'));
-        $this->form_validation->set_rules('password','','required', array('required'=>'Password masih kosong'));
+				$this->form_validation->set_rules('nama','','required', array('required'=>'Nama masih kosong'));
+				$this->form_validation->set_rules('password','','required', array('required'=>'Password masih kosong'));
         $this->form_validation->set_rules('password2', '','required|matches[password]', array('required' => 'Konfirmasi password masih kosong','matches'=>'Password tidak sama! Cek kembali password Anda'));
 
         if($this->form_validation->run() === FALSE){
-            $this->load->view('frontends/user_id/register_pengacara', $data);
-        }else{
-            $enc_password = sha1($this->input->post('password'));
-							$data_user = array(
-												'username' => $this->input->post('username'),
-												'email' => $this->input->post('email'),
-												'password' => $enc_password,
-												'user_status' => '1',
-												'level' => '4',
-												'user_post_hari'=>hari_ini(date('w')),
-												'user_post_tanggal'=>date('Y-m-d'),
-												'user_post_jam'=>date('H:i:s'),
-												'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'));
-							$id_pelanggan = $this->Crud_m->tambah_user($data_user);
-							$data_user_detail = array(
-										   	'id_user' => $id_pelanggan);
-							$this->Crud_m->tambah_user_detail($data_user_detail);
-							$data_user_pengacara = array(
-										   	'id_user' => $id_pelanggan);
-							$this->Crud_m->tambah_user_pengacara($data_user_pengacara);
-
-            $this->session->set_flashdata('user_registered', 'Anda Berhasil Mendaftar, Silahkan Login / Masuk Ke Legia');
-
-            redirect(base_url("masuk"));
-        }
-	}
-
-	public function register_notaris_id()
-	{
-										$data['title'] = 'Sign Up';
-				            $this->form_validation->set_rules('username','','required|min_length[5]|max_length[12]|is_unique[user.username]', array('required' => 'username masih kosong','is_unique' => 'Username telah digunakan, silahkan gunakan username lain.'));
-										$this->form_validation->set_rules('nama','','required', array('required'=>'Nama masih kosong'));
-				            $this->form_validation->set_rules('email','','required|valid_email|is_unique[user.email]', array('required' => 'Email masih kosong','is_unique' => 'Email telah digunakan, silahkan gunakan email lain.'));
-				            $this->form_validation->set_rules('password','','required', array('required'=>'Password masih kosong'));
-				            $this->form_validation->set_rules('password2', '','required|matches[password]', array('required' => 'Konfirmasi password masih kosong','matches'=>'Password tidak sama! Cek kembali password Anda'));
-
-				            if($this->form_validation->run() === FALSE){
-				                $this->load->view('frontends/user_id/register_notaris', $data);
-				            }else{
-				                $enc_password = sha1($this->input->post('password'));
-												$data_user = array(
-																	'username' => $this->input->post('username'),
-																	'email' => $this->input->post('email'),
-																	'password' => $enc_password,
-																	'user_status' => '1',
-																	'level' => '4',
-																	'user_post_hari'=>hari_ini(date('w')),
-																	'user_post_tanggal'=>date('Y-m-d'),
-																	'user_post_jam'=>date('H:i:s'),
-																	'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
-																	'nama' => $this->input->post('nama'));
-												$id_pelanggan = $this->Crud_m->tambah_user($data_user);
-												$data_user_detail = array(
-															   	'id_user' => $id_pelanggan);
-												$this->Crud_m->tambah_user_detail($data_user_detail);
-
-				                $this->session->set_flashdata('user_registered', 'You are now registered and can log in');
-
-				                redirect(base_url("login"));
-				            }
-		}
-	public function register_perusahaan_id()
-	{
-		$data['title'] = 'Sign Up';
-        $this->form_validation->set_rules('username','','required|min_length[5]|max_length[12]|is_unique[user.username]', array('required' => 'username masih kosong','is_unique' => 'Username telah digunakan, silahkan gunakan username lain.'));
-					$this->form_validation->set_rules('nama','','required', array('required'=>'Nama masih kosong'));
-        $this->form_validation->set_rules('email','','required|valid_email|is_unique[user.email]', array('required' => 'Email masih kosong','is_unique' => 'Email telah digunakan, silahkan gunakan email lain.'));
-        $this->form_validation->set_rules('password','','required', array('required'=>'Password masih kosong'));
-        $this->form_validation->set_rules('password2', '','required|matches[password]', array('required' => 'Konfirmasi password masih kosong','matches'=>'Password tidak sama! Cek kembali password Anda'));
-
-        if($this->form_validation->run() === FALSE){
-            $this->load->view('frontends/user_id/register_perusahaan', $data);
+            $this->load->view('frontends/user_id/register_hukum', $data);
         }else{
             $enc_password = sha1($this->input->post('password'));
 							$data_user = array(
@@ -162,16 +88,47 @@ class User extends CI_Controller {
 							$data_user_detail = array(
 										   	'id_user' => $id_pelanggan);
 							$this->Crud_m->tambah_user_detail($data_user_detail);
+							$data_user_pengacara = array(
+										   	'id_user' => $id_pelanggan);
+							$this->Crud_m->tambah_user_pengacara($data_user_pengacara);
 
-            $this->session->set_flashdata('user_registered', 'You are now registered and can log in');
+            $this->session->set_flashdata('user_registered', 'Anda Berhasil Mendaftar, Silahkan Login / Masuk Ke Legia');
 
-            redirect(base_url("login"));
+            redirect(base_url("masuk"));
         }
 	}
+	public function register_pengguna_id()
+	{
+		$data['title'] = 'Sign Up';
+        $this->form_validation->set_rules('username','','required|min_length[5]|max_length[12]|is_unique[user.username]', array('required' => 'username masih kosong','is_unique' => 'Username telah digunakan, silahkan gunakan username lain.'));
+				$this->form_validation->set_rules('nama','','required', array('required'=>'Nama masih kosong'));
+        $this->form_validation->set_rules('email','','required|valid_email|is_unique[user.email]', array('required' => 'Email masih kosong','is_unique' => 'Email telah digunakan, silahkan gunakan email lain.'));
+        $this->form_validation->set_rules('password','','required', array('required'=>'Password masih kosong'));
+        $this->form_validation->set_rules('password2', '','required|matches[password]', array('required' => 'Konfirmasi password masih kosong','matches'=>'Password tidak sama! Cek kembali password Anda'));
 
-
-
-
+        if($this->form_validation->run() === FALSE){
+            $this->load->view('frontends/user_id/register_pengguna', $data);
+        }else{
+            $enc_password = sha1($this->input->post('password'));
+							$data_user = array(
+												'username' => $this->input->post('username'),
+												'email' => $this->input->post('email'),
+												'password' => $enc_password,
+												'user_status' => '1',
+												'level' => '6',
+												'user_post_hari'=>hari_ini(date('w')),
+												'user_post_tanggal'=>date('Y-m-d'),
+												'user_post_jam'=>date('H:i:s'),
+												'id_session'=>md5($this->input->post('email')).'-'.date('YmdHis'),
+												'nama' => $this->input->post('nama'));
+							$id_pelanggan = $this->Crud_m->tambah_user($data_user);
+							$data_user_detail = array(
+										   	'id_user' => $id_pelanggan);
+							$this->Crud_m->tambah_user_detail($data_user_detail);
+							$this->session->set_flashdata('user_registered', 'Anda Berhasil Mendaftar, Silahkan Login / Masuk Ke Legia');
+            redirect(base_url("masuk"));
+        }
+	}
 	public function login_google()
 	{
         include_once APPPATH . "../vendor/autoload.php";
@@ -220,7 +177,6 @@ class User extends CI_Controller {
 		   echo "Login success";
 		  }
   }
-
 	public function logout()
 	{
 		$id = array('id_session' => $this->session->id_session);
@@ -232,8 +188,9 @@ class User extends CI_Controller {
 						$this->session->unset_userdata('username');
 
 						// Set message
+						$this->session->set_flashdata('user_logout', 'Anda Berhasil Logout');
 						$this->session->sess_destroy();
-						$this->session->set_flashdata('user_logout', 'Anda Berhasil Logout');						
+
 						redirect(base_url("masuk"));
 	}
 

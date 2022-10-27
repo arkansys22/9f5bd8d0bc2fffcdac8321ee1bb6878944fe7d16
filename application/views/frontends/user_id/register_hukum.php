@@ -30,19 +30,21 @@
     <nav class="user-tabs mb-4">
     <ul role="tablist" class="nav nav-pills nav-justified">
     <li class="nav-item">
-    <a href="<?php base_url() ?>daftar" class="nav-link active">Pengacara</a>
+      <a href="<?php base_url() ?>daftar-pengguna-jasa" class="nav-link">Pengguna Jasa</a>
     </li>
     <li class="nav-item">
-    <a href="<?php base_url() ?>daftar_perusahaan" class="nav-link">Perusahaan</a>
-    </li>
-    <li class="nav-item">
-    <a href="<?php base_url() ?>daftar_notaris" class="nav-link">Notaris</a>
+      <a href="<?php base_url() ?>daftar-praktisi-hukum" class="nav-link active">Hukum</a>
     </li>
     </ul>
     </nav>
     <div class="tab-content pt-0">
       <div role="tabpanel" id="developer" class="tab-pane fade active show">
-      <?php echo form_open('daftar'); ?>
+      <?php echo form_open('daftar-praktisi-hukum'); ?>
+      <div class="form-group form-focus">
+      <input type="text" name="nama" class="form-control floating">
+      <label class="focus-label">Nama</label>
+      <small><?php echo form_error('nama'); ?></small>
+      </div>
       <div class="form-group form-focus">
       <input type="text" name="username" class="form-control floating">
       <label class="focus-label">Username</label>

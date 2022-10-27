@@ -28,36 +28,42 @@
     </div>
     <nav class="user-tabs mb-4">
     <ul role="tablist" class="nav nav-pills nav-justified">
-    <li class="nav-item">
-    <a href="<?php base_url() ?>daftar" class="nav-link ">Pengacara</a>
-    </li>
-    <li class="nav-item">
-    <a href="<?php base_url() ?>daftar_perusahaan" class="nav-link active">Perusahaan</a>
-    </li>
-    <li class="nav-item">
-    <a href="<?php base_url() ?>daftar_notaris" class="nav-link">Notaris</a>
-    </li>
+      <li class="nav-item">
+        <a href="<?php base_url() ?>daftar-pengguna-jasa" class="nav-link active">Pengguna Jasa</a>
+      </li>
+      <li class="nav-item">
+        <a href="<?php base_url() ?>daftar-praktisi-hukum" class="nav-link">Hukum</a>
+      </li>
     </ul>
     </nav>
     <div class="tab-content pt-0">
       <div role="tabpanel" id="developer" class="tab-pane fade active show">
-      <form action="<?php base_url() ?>">
-      <div class="form-group form-focus">
-      <input type="email" class="form-control floating">
-      <label class="focus-label">Username</label>
-      </div>
-      <div class="form-group form-focus">
-      <input type="email" class="form-control floating">
-      <label class="focus-label">Email </label>
-      </div>
-      <div class="form-group form-focus">
-      <input type="password" class="form-control floating">
-      <label class="focus-label">Password</label>
-      </div>
-      <div class="form-group form-focus mb-0">
-      <input type="password" class="form-control floating">
-      <label class="focus-label">Confirm Password</label>
-       </div>
+        <?php echo form_open('daftar-pengguna-jasa'); ?>
+        <div class="form-group form-focus">
+        <input type="text" name="nama" class="form-control floating">
+        <label class="focus-label">Nama</label>
+        <small><?php echo form_error('nama'); ?></small>
+        </div>
+        <div class="form-group form-focus">
+        <input type="text" name="username" class="form-control floating">
+        <label class="focus-label">Username</label>
+        <small><?php echo form_error('username'); ?></small>
+        </div>
+        <div class="form-group form-focus">
+        <input type="email" name="email" class="form-control floating">
+        <label class="focus-label">Email </label>
+        <small><?php echo form_error('email'); ?></small>
+        </div>
+        <div class="form-group form-focus">
+        <input type="password" name="password" class="form-control floating">
+        <label class="focus-label">Password</label>
+        <small><?php echo form_error('password'); ?></small>
+        </div>
+        <div class="form-group form-focus mb-0">
+        <input type="password" name="password2" class="form-control floating">
+        <label class="focus-label">Confirm Password</label>
+        <small><?php echo form_error('password2'); ?></small>
+         </div>
       <div class="dont-have">
       <label class="custom_check">
       <input type="checkbox" name="rem_password">
@@ -74,7 +80,7 @@
       </div>
       <div class="col-6 text-end dont-have">Sudah punya akun? <a href="<?php base_url() ?>masuk">Masuk</a></div>
       </div>
-      </form>
+      <?php echo form_close(); ?>
       </div>
     </div>
     </div>

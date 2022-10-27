@@ -51,7 +51,7 @@
                     <div class="col-6 text-start">
                       <a class="forgot-link" href="#">Lupa kata sandi ?</a>
                     </div>
-                    <div class="col-6 text-end dont-have">Tidak punya akun? <a href="<?php echo base_url()?>daftar">Buat Akun</a></div>
+                    <div class="col-6 text-end dont-have">Tidak punya akun? <a href="<?php echo base_url()?>daftar-pengguna-jasa">Buat Akun</a></div>
                   </div>
                 </form>
               </div>

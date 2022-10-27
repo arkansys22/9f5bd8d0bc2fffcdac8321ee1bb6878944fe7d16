@@ -63,7 +63,7 @@
   </div>
 </ul>
 <ul class="nav header-navbar-rht text-center main-nav hide-mobile">
-  <?php if($this->session->level=='4'){ ?>
+  <?php if($this->session->level=='4' OR $this->session->level=='5'){ ?>
   <li><a href="<?php echo base_url()?>logout" class="log-btn btn-login-custom"><i class="fas fa-lock"></i> Logout</a></li>
   <?php }else{ ?>
   <li><a href="<?php echo base_url()?>masuk" class="log-btn btn-login-custom"><i class="fas fa-lock"></i> Login</a></li>

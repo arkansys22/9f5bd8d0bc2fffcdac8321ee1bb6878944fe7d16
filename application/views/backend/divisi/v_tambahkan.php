@@ -33,10 +33,12 @@
             </div>
             <!-- /.card-header -->
 
-
+            <?php $users= $this->Crud_m->view_where('user', array('email'=> $this->session->email))->row_array(); ?>
             <!-- form start -->
             <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
             echo form_open_multipart('paneladmin/divisi_tambahkan',$attributes); ?>
+
+            <input type="hidden" name="post_oleh" value="<?php echo $users['username'];?>">
               <div class="card-body">
                 <div class="form-group">
                   <div class="row">

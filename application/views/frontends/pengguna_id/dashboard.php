@@ -12,6 +12,8 @@
   <!-- header -->
   <?php $this->load->view('frontends/header')?>
   <!-- header end -->
+  <?php $users= $this->Crud_m->view_where('user', array('email'=> $this->session->email))->row_array(); ?>
+  <?php $user_level= $this->Crud_m->view_where('user_level', array('user_level_id'=> $users['level']))->row_array(); ?>
 
   <div class="bread-crumb-bar">
     <div class="container">
@@ -21,7 +23,7 @@
             <nav aria-label="breadcrumb" class="page-breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html"><img src="<?php base_url()?>assets/frontends/img/home-icon.svg" alt="Post Author"> Home</a></li>
-                <li class="breadcrumb-item" aria-current="page">Employee</li>
+                <li class="breadcrumb-item" aria-current="page"><?php echo $user_level['user_level_nama'];?></li>
                 <li class="breadcrumb-item" aria-current="page">Dashboard</li>
               </ol>
             </nav>
@@ -39,11 +41,12 @@
         <div class="col-xl-3 col-md-4">
           <div class="settings-widget">
             <div class="settings-header d-sm-flex flex-row flex-wrap text-center text-sm-start align-items-center">
-              <a href="user-account-details.html"><img alt="profile image" src="<?php base_url()?>assets/frontends/img/img-04.jpg" class="avatar-lg rounded-circle"></a>
+              <a href="#">
+                <img alt="profile image" src="<?php base_url()?>assets/frontends/img/img-04.jpg" class="avatar-lg rounded-circle">
+              </a>
               <div class="ms-sm-3 ms-md-0 ms-lg-3 mt-2 mt-sm-0 mt-md-2 mt-lg-0">
-                <p class="mb-2">Selamat Datang,</p>
-                <a href="#"><h3 class="mb-0">John Danie S.</h3></a>
-                <p class="mb-0">@johndaniee</p>
+                <a href="#"><p style="color:white;" class="mb-0"><b><?php echo $users['nama'];?></b></p></a>
+                <p style="font-size: 12px;" class="mb-0"><?php echo $user_level['user_level_nama'];?> <a href="" title="Verified" style="color:white;"><i class="fas fa-check-circle"></i></a></p>
               </div>
             </div>
             <div class="settings-menu">

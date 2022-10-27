@@ -2307,7 +2307,7 @@ class Paneladmin extends CI_Controller {
 		if (isset($_POST['submit'])){
 
 									$data = array(
-													'divisi_post_oleh'=>$this->session->username,
+													'divisi_post_oleh'=>$this->input->post('post_oleh'),
 													'divisi_judul'=>$this->db->escape_str($this->input->post('divisi_judul')),
 													'divisi_judul_seo'=>$this->mylibrary->seo_title($this->input->post('divisi_judul')),
 													'divisi_desk'=>$this->input->post('divisi_desk'),
