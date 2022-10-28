@@ -33,7 +33,7 @@
       <a href="<?php base_url() ?>daftar-pengguna-jasa" class="nav-link">Pengguna Jasa</a>
     </li>
     <li class="nav-item">
-      <a href="<?php base_url() ?>daftar-praktisi-hukum" class="nav-link active">Hukum</a>
+      <a href="<?php base_url() ?>daftar-praktisi-hukum" class="nav-link active">Praktisi Hukum</a>
     </li>
     </ul>
     </nav>
