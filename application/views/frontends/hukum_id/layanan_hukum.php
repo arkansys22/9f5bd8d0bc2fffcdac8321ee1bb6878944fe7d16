@@ -52,12 +52,12 @@
             <div class="settings-menu">
               <ul>
                 <li class="nav-item">
-                  <a href="<?php base_url()?>dashboard" class="nav-link active">
+                  <a href="<?php base_url()?>dashboard" class="nav-link ">
                     <i class="material-icons">verified_user</i> Akun
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?php base_url()?>layanan-hukum" class="nav-link">
+                  <a href="<?php base_url()?>layanan-hukum" class="nav-link active">
                     <i class="material-icons">business_center</i> Layanan Hukum
                   </a>
                 </li>
@@ -97,21 +97,35 @@
               <div class="col-md-6 col-lg-4">
                 <div class="dash-widget">
                 <div class="dash-widget-more">
-                <a href="#" class="d-flex">Informasi Pribadi <i class="fas fa-arrow-right ms-auto"></i></a>
+                <a href="#" class="d-flex">Profesi <i class="fas fa-arrow-right ms-auto"></i></a>
                 </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="dash-widget">
                 <div class="dash-widget-more">
-                <a href="#" class="d-flex">Pengalaman & Sertifikat <i class="fas fa-arrow-right ms-auto"></i></a>
+                <a href="#" class="d-flex">Alamat Kantor <i class="fas fa-arrow-right ms-auto"></i></a>
                 </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="dash-widget">
                 <div class="dash-widget-more">
-                <a href="#" class="d-flex">Riwayat Pendidikan <i class="fas fa-arrow-right ms-auto"></i></a>
+                <a href="#" class="d-flex">Tarif Layanan <i class="fas fa-arrow-right ms-auto"></i></a>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="dash-widget">
+                <div class="dash-widget-more">
+                <a href="#" class="d-flex">Jadwal <i class="fas fa-arrow-right ms-auto"></i></a>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="dash-widget">
+                <div class="dash-widget-more">
+                <a href="#" class="d-flex">Rekening Bank <i class="fas fa-arrow-right ms-auto"></i></a>
                 </div>
                 </div>
               </div>

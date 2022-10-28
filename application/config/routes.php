@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 //Indonesia Language
 $route['dashboard'] = "user/home";
+$route['layanan-hukum'] = "user/layanan_hukum";
 $route['logout'] = "user/logout";
 $route['masuk'] = "User/login_id";
 $route['daftar-praktisi-hukum'] = "User/register_hukum_id";

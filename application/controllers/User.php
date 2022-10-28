@@ -60,6 +60,23 @@ class User extends CI_Controller {
 			}
 	}
 
+	public function layanan_hukum()
+	{
+			if ($this->session->level=='1'){
+				$this->load->view('backend/home');
+			}elseif ($this->session->level=='2'){
+				$this->load->view('backend/home');
+			}elseif ($this->session->level=='3'){
+					$this->load->view('backend/home');
+			}elseif ($this->session->level=='4'){
+					$this->load->view('frontends/hukum_id/layanan_hukum');
+			}elseif ($this->session->level=='5'){
+					$this->load->view('frontends/pengguna_id/layanan_hukum');
+			}else{
+				redirect(base_url());
+			}
+	}
+
 	public function register_hukum_id()
 	{
 				$data['title'] = 'Sign Up';
