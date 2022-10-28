@@ -94,44 +94,39 @@
         <div class="col-xl-9 col-md-8">
           <div class="dashboard-sec">
             <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <div class="dash-widget">
-                <div class="dash-widget-more">
-                <a href="<?php echo base_url() ?>profesi-hukum" class="d-flex">Profesi & Spesialis<i class="fas fa-arrow-right ms-auto"></i></a>
-                </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="dash-widget">
-                <div class="dash-widget-more">
-                <a href="#" class="d-flex">Alamat Kantor <i class="fas fa-arrow-right ms-auto"></i></a>
-                </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="dash-widget">
-                <div class="dash-widget-more">
-                <a href="#" class="d-flex">Tarif Layanan <i class="fas fa-arrow-right ms-auto"></i></a>
-                </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="dash-widget">
-                <div class="dash-widget-more">
-                <a href="#" class="d-flex">Jadwal <i class="fas fa-arrow-right ms-auto"></i></a>
-                </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="dash-widget">
-                <div class="dash-widget-more">
-                <a href="#" class="d-flex">Rekening Bank <i class="fas fa-arrow-right ms-auto"></i></a>
-                </div>
+              <div class="col-md-12 col-lg-12">
+                <nav class="user-tabs mb-4">
+                <ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+                <li class="nav-item">
+                <a class="nav-link active" href="<?php echo base_url() ?>profesi-hukum">PROFESI</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url() ?>spesialis-hukum">SPESIALIS</a>
+                </li>
+                </ul>
+                </nav>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="payment-list">
+                      <h3>Profesi Anda sebagai Praktisi Hukum</h3>
+                      <?php $profesi= $this->Crud_m->view_where_ordering('divisi',array('divisi_status'=>'publish'),'divisi_id','ASC'); ?>
+                      <?php foreach ($profesi as $row){  ?>
+                      <label class="payment-radio credit-card-option mb-3">
+                        <input type="radio" name="radio" value="<?=$row['divisi_id'] ?>" >
+                        <span class="checkmark"></span>
+                        <?=$row['divisi_judul'] ?>
+                      </label>
+                      <?php } ?>
+                      <div class="row">
+                        <div class="more-learn">
+                          <a href="#" class="btn btn-primary">Simpan</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>

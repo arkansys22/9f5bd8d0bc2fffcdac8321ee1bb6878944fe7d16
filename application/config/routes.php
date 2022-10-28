@@ -4,6 +4,8 @@ $route['default_controller'] = 'home';
 //Indonesia Language
 $route['dashboard'] = "user/home";
 $route['layanan-hukum'] = "user/layanan_hukum";
+$route['profesi-hukum'] = "user/profesi";
+$route['spesialis-hukum'] = "user/spesialis";
 $route['logout'] = "user/logout";
 $route['masuk'] = "User/login_id";
 $route['daftar-praktisi-hukum'] = "User/register_hukum_id";

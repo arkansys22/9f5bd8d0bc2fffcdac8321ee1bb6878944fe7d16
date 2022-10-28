@@ -105,7 +105,7 @@
 <div class="perfect-four">
 <p>Get the perfect Developed project for your budget from our creative community.</p>
 <div class="more-learn">
-<a href="project.html" class="btn btn-primary">Konsultasi Sekarang</a>
+<a href="#" class="btn btn-primary">Konsultasi Sekarang</a>
 </div>
 </div>
 </div>

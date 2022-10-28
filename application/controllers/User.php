@@ -76,6 +76,38 @@ class User extends CI_Controller {
 				redirect(base_url());
 			}
 	}
+	public function profesi()
+	{
+			if ($this->session->level=='1'){
+				$this->load->view('backend/home');
+			}elseif ($this->session->level=='2'){
+				$this->load->view('backend/home');
+			}elseif ($this->session->level=='3'){
+					$this->load->view('backend/home');
+			}elseif ($this->session->level=='4'){
+					$this->load->view('frontends/hukum_id/profesi');
+			}elseif ($this->session->level=='5'){
+					$this->load->view('frontends/pengguna_id/layanan_hukum');
+			}else{
+				redirect(base_url());
+			}
+	}
+	public function spesialis()
+	{
+			if ($this->session->level=='1'){
+				$this->load->view('backend/home');
+			}elseif ($this->session->level=='2'){
+				$this->load->view('backend/home');
+			}elseif ($this->session->level=='3'){
+					$this->load->view('backend/home');
+			}elseif ($this->session->level=='4'){
+					$this->load->view('frontends/hukum_id/spesialis');
+			}elseif ($this->session->level=='5'){
+					$this->load->view('frontends/pengguna_id/layanan_hukum');
+			}else{
+				redirect(base_url());
+			}
+	}
 
 	public function register_hukum_id()
 	{
