@@ -14,7 +14,7 @@ $route['layanan/(:any)'] = "layanan/product_category/$1";
 $route['layanan-detail/(:any)'] = "layanan/detail/$1";
 $route['layanan/layanan_detail/detail'] = "layanan/layanan_detail";
 
-$route['dashboard-perusahaan'] = "Perusahaan/index";
+
 
 
 $route['blogs'] = "blogs/index";
