@@ -19335,3 +19335,9 @@ h2.footer-title::after {
 .plan-details a, .pro-info  .list-details .slot {
   color: var(--bluelegia);
 }
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}

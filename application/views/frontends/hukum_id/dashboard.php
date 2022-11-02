@@ -46,7 +46,15 @@
               </a>
               <div class="ms-sm-3 ms-md-0 ms-lg-3 mt-2 mt-sm-0 mt-md-2 mt-lg-0">
                 <a href="#"><p style="color:white;" class="mb-0"><b><?php echo $users['nama'];?></b></p></a>
-                <p style="font-size: 12px;" class="mb-0"><?php echo $user_level['user_level_nama'];?> <a href="" title="Verified" style="color:white;"><i class="fas fa-check-circle"></i></a></p>
+                <p style="font-size: 12px;" class="mb-0">
+                  <?php echo $user_level['user_level_nama'];?> 
+                  <a href="" title="Verified" style="color:white;">
+                  <!-- Tanda Centang ketika user ter Verified -->
+                  <?php if($users['user_status_verifikasi_id'] == 1){ ?>
+                    <i class="fas fa-check-circle"></i>
+                  <?php } ?>
+                  </a>
+                </p>
               </div>
             </div>
             <div class="settings-menu">
@@ -56,6 +64,8 @@
                     <i class="material-icons">verified_user</i> Akun
                   </a>
                 </li>
+
+              <?php if($users['user_status_verifikasi_id'] == 1){ ?>
                 <li class="nav-item">
                   <a href="<?php base_url()?>layanan-hukum" class="nav-link">
                     <i class="material-icons">business_center</i> Layanan Hukum
@@ -81,6 +91,34 @@
                     <i class="material-icons">settings</i> Pengaturan
                   </a>
                 </li>
+              <?php } else{ ?>
+                <li class="nav-item">
+                  <a href="<?php base_url()?>layanan-hukum" class="nav-link disabled">
+                    <i class="material-icons">business_center</i> Layanan Hukum
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link disabled">
+                    <i class="material-icons">record_voice_over</i> Ulasan
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link disabled">
+                    <i class="material-icons">chat</i> Pesan
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link disabled">
+                    <i class="material-icons">wifi_tethering</i> Pembayaran
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link disabled">
+                    <i class="material-icons">settings</i> Pengaturan
+                  </a>
+                </li>
+              <?php } ?>
+
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="material-icons">power_settings_new</i> Keluar
